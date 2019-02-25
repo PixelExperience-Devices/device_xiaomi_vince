@@ -210,9 +210,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.recovery.qcom
 ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_USES_OLD_MNC_FORMAT := true
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2021-07-05
-
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
@@ -230,6 +227,9 @@ TARGET_THERMAL_HAL := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_VNDK_VERSION := current
+
+# Vendor SPL
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
