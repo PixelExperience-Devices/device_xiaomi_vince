@@ -142,6 +142,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libldacBT_dec
 
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8953 \
