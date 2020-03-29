@@ -21,17 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common DerpFest stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
-
+# Inherit some common PixelExperience stuff.
 TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
-DERP_BUILDTYPE := Official
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := derp_vince
+PRODUCT_NAME := aosp_vince
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus

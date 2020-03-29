@@ -18,6 +18,9 @@
 
 DEVICE_PATH := device/xiaomi/vince
 
+# Display
+TARGET_SCREEN_DENSITY := 420
+
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
