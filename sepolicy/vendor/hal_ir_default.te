@@ -1,2 +1,4 @@
 allow hal_ir_default lirc_device:chr_file rw_file_perms;
-allow hal_ir_default device:chr_file { read write open ioctl };
+type ir_dev_file, file_type;
+allow hal_ir_default ir_dev_file:chr_file { open read write ioctl };
+allow ueventd ir_dev_file:chr_file { create getattr };
