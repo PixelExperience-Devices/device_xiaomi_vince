@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2018 The havocOS Project
+# Copyright (C) 2017-2018 The aospOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_vince.mk
+    $(LOCAL_DIR)/aosp_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_vince-user \
-    havoc_vince-userdebug \
-    havoc_vince-eng
+    aosp_vince-user \
+    aosp_vince-userdebug \
+    aosp_vince-eng
