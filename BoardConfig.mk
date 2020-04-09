@@ -32,7 +32,7 @@ TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
 TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
 
 # Kernel
-TARGET_KERNEL_CONFIG := vince_defconfig
+TARGET_KERNEL_CONFIG := vince-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 
 # Partitions
