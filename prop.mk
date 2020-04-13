@@ -1,13 +1,13 @@
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.audio.fluence.speaker=true \
-    persist.vendor.audio.fluence.voicecall=true \
-    persist.vendor.audio.fluence.voicerec=false \
-    ro.vendor.audio.sdk.fluencetype=fluence
+	ro.qc.sdk.audio.fluencetype=fluencepro \
+	persist.audio.fluence.voicecall=false \
+	persist.audio.fluence.voicerec=false \
+	persist.audio.fluence.speaker=false \
+	persist.audio.fluence.audiorec=true
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
     persist.camera.dual.camera=0 \
     persist.camera.CDS=off
-
