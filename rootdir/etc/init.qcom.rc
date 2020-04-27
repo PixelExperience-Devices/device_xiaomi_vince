@@ -336,6 +336,7 @@ service vendor.msm_irqbal_lb /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqba
     disabled
 
 on charger
+    setprop persist.sys.usb.config mass_storage
     load_system_props
     start qcom-post-boot
 
