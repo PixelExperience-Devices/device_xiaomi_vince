@@ -21,7 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common AIM stuff.
+ifeq ($(WITH_GAPPS),true)
+WITH_MINI_GAPPS := true
+endif
 $(call inherit-product, vendor/aim/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
