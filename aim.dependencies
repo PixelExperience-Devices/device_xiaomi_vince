@@ -5,8 +5,8 @@
   },
   {
     "repository": "KudProject/prebuilts_clang_host_linux-x86",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-r377782c",
-    "revision": "r377782c"
+    "target_path": "prebuilts/clang/host/linux-x86/clang-r383902",
+    "revision": "r383902"
   },
   {
     "repository": "KudProject/proprietary_vendor_xiaomi",
