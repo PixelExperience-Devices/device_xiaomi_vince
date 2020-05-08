@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017 The aospOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,6 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
+<<<<<<< HEAD:aosp_vince.mk
 # Inherit some common PixelExperience stuff.
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -29,6 +30,14 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
 PRODUCT_NAME := aosp_vince
+=======
+# Inherit some common AOSiP stuff.
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := vince
+PRODUCT_NAME := aosip_vince
+>>>>>>> 58b522ab671e42b6debb7249e5e9b3367114ea8a:aosip_vince.mk
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
