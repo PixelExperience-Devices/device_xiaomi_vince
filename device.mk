@@ -28,8 +28,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8953 \
-    libmm-qcamera \
-    CameraGo
+    libmm-qcamera
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
