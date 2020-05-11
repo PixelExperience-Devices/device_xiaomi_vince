@@ -38,11 +38,6 @@ PRODUCT_PACKAGES += \
 # Properties
 -include device/xiaomi/vince/prop.mk
 
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.goodix.sh \
