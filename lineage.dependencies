@@ -4,11 +4,6 @@
     "target_path": "kernel/xiaomi/vince"
   },
   {
-    "repository": "KudProject/prebuilts_clang_host_linux-x86",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-r383902",
-    "revision": "r383902"
-  },
-  {
     "repository": "r5p-dev/proprietary_vendor_xiaomi_vince",
     "target_path": "vendor/xiaomi/vince"
   }
