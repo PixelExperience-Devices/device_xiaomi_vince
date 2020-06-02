@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/mido
+DEVICE_PATH := device/xiaomi/vince
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -41,7 +41,7 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := mido_defconfig
+TARGET_KERNEL_CONFIG := vince_defconfig
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 androidboot.usbconfigfs=true loop.max_part=16
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -50,7 +50,7 @@ BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r383902
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953-4.9
+TARGET_KERNEL_SOURCE := kernel/xiaomi/vince
 TARGET_KERNEL_VERSION := 4.9
 
 # ANT
@@ -164,7 +164,7 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_mido
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_vince
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
 
 # Media
@@ -226,4 +226,4 @@ WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/mido/BoardConfigVendor.mk
+-include vendor/xiaomi/vince/BoardConfigVendor.mk

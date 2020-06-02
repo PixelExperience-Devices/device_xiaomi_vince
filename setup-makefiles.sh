@@ -19,7 +19,7 @@
 set -e
 
 # Required!
-DEVICE=mido
+DEVICE=vince
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2017

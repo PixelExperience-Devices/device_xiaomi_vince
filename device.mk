@@ -14,11 +14,8 @@
 # limitations under the License.
 #
 
-# Use KudProject dev certificates if available
--include vendor/kud/config/certs.mk
-
-$(call inherit-product, vendor/xiaomi/mido/mido-vendor.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
+$(call inherit-product, vendor/xiaomi/vince/vince-vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -29,7 +26,7 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
@@ -248,7 +245,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_mido
+    android.hardware.light@2.0-service.xiaomi_vince
 
 # LiveDisplay
 PRODUCT_PACKAGES += \

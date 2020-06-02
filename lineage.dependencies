@@ -1,7 +1,7 @@
 [
   {
-    "repository": "KudProject/kernel_xiaomi_msm8953-4.9",
-    "target_path": "kernel/xiaomi/msm8953-4.9"
+    "repository": "r5p-dev/android_kernel_xiaomi_vince",
+    "target_path": "kernel/xiaomi/vince"
   },
   {
     "repository": "KudProject/prebuilts_clang_host_linux-x86",
@@ -9,7 +9,7 @@
     "revision": "r383902"
   },
   {
-    "repository": "KudProject/proprietary_vendor_xiaomi",
-    "target_path": "vendor/xiaomi"
+    "repository": "r5p-dev/proprietary_vendor_xiaomi_vince",
+    "target_path": "vendor/xiaomi/vince"
   }
 ]

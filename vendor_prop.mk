@@ -1,5 +1,5 @@
 #
-# system.prop for mido
+# system.prop for vince
 #
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
