@@ -730,17 +730,26 @@ vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|75335443a33a06a03eecfa714dfe9f1c0c4df2b1
 vendor/lib64/libwvhidl.so|4af61fdcf1186700ea7ee23c607fb9ce5fd0f0e8
 
-# Fingerprint
-vendor/bin/gx_fpd|2467b30465fe3b1c6a376d50183927dcdcd732c9
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_mido|461a86bdb766866c2d275c714848e273bef5a36d
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_mido.rc|24963e97d360629a657d52892e94cce72c35fb4a
-vendor/lib64/hw/fingerprint.goodix.so|f0634fcbcfe6d341ef05e4992fb06a04d686cb03
-vendor/lib64/hw/fingerprint.searchf.so|bf6fce6739ba843b93d2bf04c9fd69f33b4815c0
-vendor/lib64/hw/gxfingerprint.default.so|21120610203e3e94a95610702a6f8f9f82535a69
-vendor/lib64/libbindergx.so|eb676b92d13a7835aaab309d5c692151993e016f
-vendor/lib64/libfp_client.so|110307b89ac3777a42a2c9045fce528f26c918b8
-vendor/lib64/libfpnav.so|588301735456b31b09aa0779a7f46481056868dd
-vendor/lib64/libfpservice.so|7ca47dfa5e8be7c502f1ca3431ee2a46d38e1f43
+# Fingerprint - from vince
+etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
+lib/android.hardware.biometrics.fingerprint@2.1.so:vendor/lib/android.hardware.biometrics.fingerprint@2.1.so|3e17bdd951d2c1a2e86010a44717b46963e397df
+lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so|6437ed7a7a68733fdde95cc788a3354f4bbe664e
+lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.default.so|5c403940036a29766864f28fc851a204dcf80a0e
+lib64/android.hardware.biometrics.fingerprint@2.1.so:vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so|b809f1b15029f8769216b21d027e1d5b481fc714
+lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so|0d3d9831b31c27d41296c582d2550cdbfabc8d06
+lib64/libgf_algo.so:vendor/lib64/libgf_algo.so|0e9d1ff46c6d14974ec93e3a146c2c6c0460d1b7
+lib64/libgf_ca.so:vendor/lib64/libgf_ca.so|583a2beee40b38cf14215e4aaa5d872d60b8a00a
+lib64/libgf_hal.so:vendor/lib64/libgf_hal.so|6fd3d415d5822b746a1a9b1163c3c6ddab35912c
+-vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|6ed4438dae5a1169cb6baa36ea56d32a0729a2b6
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|d10a4ed108610493efd420c69077eab7ab64240b
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|a66733fc6eb94d6715c8085e696b47e313cc2568
+vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
+vendor/framework/com.fingerprints.extension.jar|3064f8f6faf8175a53c6c839cc43fba2f50cd3bb
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.default.so|1d6ad32d111819ea4d69c5c97d935aea6aa24fb3
+vendor/lib64/com.fingerprints.extension@1.0.so|46f1d8bcde50e94b7ad6df85d28300ae7b26c257
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|1744e3421733a23b8b6a1bd14487a4aa2cd4b076
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|6d98d812f84c060ddcb4b78aa5ef3b7cf3772020
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|e6a2cccf7cd005db7c232485a031341c0eb0918c
 
 # FM Radio - from LA.UM.8.6.r1-04000-89xx.0
 vendor/bin/fm_qsoc_patches|82ab33e928933b8077e77c1532a58b61a3551932
