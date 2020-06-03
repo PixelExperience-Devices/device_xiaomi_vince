@@ -916,6 +916,9 @@ vendor/lib/libOmxWmaDec.so|404ae6ea303634d96d3ee46bee2c6f898fa46c15
 vendor/lib/libvqzip.so|24e5eb30e5a2cdb544c8688d81d7cc75a1d85eaf
 -vendor/lib64/libgpustats.so|0cc12485618ae67fb327e89d03b78c5018eab7c1
 
+# Novatek touchscreen firmware
+etc/firmware/novatek_ts_fw.bin:vendor/firmware/novatek_ts_fw.bin
+
 # Perf - from LA.UM.8.6.r1-04000-89xx.0
 product/lib/vendor.qti.hardware.perf@1.0.so|b4969fa797d1957ad8f35d4f84615608f0e9cc2e
 product/lib/vendor.qti.hardware.perf@2.0.so|71592601eed5e022f4979293d68deb98e688a3d4
