@@ -56,6 +56,9 @@ vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
+# Audio firmware - from vince
+etc/firmware/tas2557_uCDSP.bin:vendor/firmware/tas2557_uCDSP.bin|b8005b3aa2cb2340ababf3cc75777a1fe14becc6
+
 # Bluetooth - from LA.UM.8.6.2.r1-06600-89xx.0
 -lib/libbtconfigstore.so|b631dd3c97fc138807ba872242087a910b13e565
 -lib64/libbtconfigstore.so|88d584d582a8822af6c0f4a6e00446e6dbae06d1
