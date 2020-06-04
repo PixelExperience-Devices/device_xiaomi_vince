@@ -8,6 +8,4 @@
 <resources>
     <!-- Rounded display corners-->
     <dimen name="rounded_corner_radius">18dp</dimen>
-    <dimen name="rounded_corner_radius_top">18dp</dimen>
-    <dimen name="rounded_corner_radius_bottom">18dp</dimen>
 </resources>
