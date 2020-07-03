@@ -1146,11 +1146,12 @@ vendor/lib64/libsensor_reg.so|b977629681598d927830ed99986e818c01c2d34a
 vendor/lib64/libsensor_user_cal.so|a9cd76f06c02e23cb7f1552aa7d51567259faa47
 vendor/lib64/sensors.ssc.so|23f60022a6415f0fb644aed853b3ee5dceecd0de
 
-# Thermal - from LA.UM.8.6.r1-04000-89xx.0
-vendor/bin/thermal-engine|56fe0c449b13cede98a779d848e3a79804feb83f
--vendor/lib/libthermalclient.so|14593d3551af6ce493b8534d123739cc7d146993
--vendor/lib64/libthermalclient.so|c36b6baf6e82a73e7afaf52589dada5248a69daf
-vendor/lib64/libthermalioctl.so|1d6587245c7e7148638f14254e2f61f6b5552857
+# Thermal - from Onclite PKQ1.181021.001/V10.2.5.0.PFLCNXM
+vendor/bin/thermal-engine|562035759ae60b3c5267a01293f1aeaa3f40c44b
+-vendor/lib/libthermalclient.so|241d1e751b3a96c67ac5b618ef38bb39d2a94fa7
+-vendor/lib64/libthermalclient.so|54121e31e4a5170f8c50e36ddb57685b6c538a21
+vendor/lib/libthermalfeature.so|1f1eb616ba26b309a2fda7de40c2163a4acaaa35
+vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
 
 # Time services - from LA.UM.8.6.r1-04000-89xx.0
 -vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|4a37afd1395758d946580af184a738e3c657b1e2
