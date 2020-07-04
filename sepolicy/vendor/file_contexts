@@ -19,6 +19,7 @@
 /data/system/fingerprint(/.*)?                  u:object_r:gx_fpd_data_file:s0
 /(vendor|system/vendor)/bin/gx_fpd              u:object_r:gx_fpd_exec:s0
 /(vendor|system/vendor)/bin/init\.goodix\.sh	u:object_r:init_fingerprint_exec:s0
+/persist/data/gxfp(/.*)?			u:object_r:gx_fpd_data_file:s0
 
 # Ir
 /dev/lirc[0-9]*					u:object_r:lirc_device:s0
