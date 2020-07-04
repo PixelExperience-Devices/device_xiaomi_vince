@@ -693,11 +693,6 @@ vendor/lib64/vendor.qti.latency@2.0.so|20a3037a1aea98f5f490b14c8f5620d2d3a0cf57
 # Consumer IR - from vince
 vendor/lib64/hw/consumerir.default.so|bb9e3f31d4ec8b199fc294577241226c531dfff2
 
-# Dirac
-vendor/etc/diracmobile.config
-lib/libDiracAPI_SHARED.so:vendor/lib/libDiracAPI_SHARED.so
-lib/soundfx/libdirac.so:vendor/lib/soundfx/libdirac.so
-
 # Display calibration
 vendor/etc/qdcm_calib_data_nt36672_csot_e7_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_td4310_ebbg_fhdplus_e7_video_mode_dsi_panel.xml
