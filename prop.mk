@@ -83,7 +83,6 @@ debug.mdpcomp.logs=0 \
 debug.performance.tuning=1 \
 debug.sf.disable_backpressure=1 \
 debug.sf.disable_hwc=0 \
-debug.sf.enable_gl_backpressure=1 \
 debug.sf.enable_hwc_vds=1 \
 debug.sf.gpu_comp_tiling=1 \
 debug.sf.hw=1 \
