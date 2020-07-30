@@ -3,3 +3,9 @@ set_prop(system_app, fm_prop)
 
 # zram
 r_dir_file(system_app sysfs_zram)
+
+# Battery Health
+allow system_app sysfs_battery_supply:dir { search };
+allow system_app sysfs_battery_supply:file { read };
+allow system_app sysfs_battery_supply:file { open };
+allow system_app sysfs_battery_supply:file { getattr };
