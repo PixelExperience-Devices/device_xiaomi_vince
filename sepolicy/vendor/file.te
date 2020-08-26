@@ -1,3 +1,6 @@
+# Batteryd
+type batteryd, domain;
+
 # Batterysecret
 type batterysecret, domain;
 
