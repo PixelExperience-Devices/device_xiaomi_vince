@@ -127,7 +127,7 @@ PRODUCT_COPY_FILES += \
 
 # Binder
 PRODUCT_PACKAGES += \
-    libhwbinder \    
+    libhwbinder \
     libhwbinder.vendor \
     libhidltransport \
     libhidltransport.vendor
