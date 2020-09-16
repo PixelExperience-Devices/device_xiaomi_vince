@@ -76,6 +76,16 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 extract "${MY_DIR}"/proprietary-files.txt "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
+function blob_fixup() {
+	case "${1}" in
+
+	product/lib64/libdpmframework.so)
+	patchelf --add-needed libdpmframework_shim.so "${2}"
+	;;
+	esac
+
+}
+
 DEVICE_BLOB_ROOT="${LINEAGE_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary
 
 # Camera configs
