@@ -626,6 +626,18 @@ vendor/firmware/cpp_firmware_v1_1_6.fw
 # Charger - from LA.UM.8.6.r1-04000-89xx.0
 vendor/bin/hvdcp_opti|4d2b255d60428363d2acf73763b6031f292bef4c
 
+# Camera Prebuilts
+vendor/bin/hw/android.hardware.camera.provider@2.4-service
+vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib/android.hardware.camera.provider@2.4-external.so
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib64/android.hardware.camera.provider@2.4-external.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
+
 # CNE - from LA.UM.8.6.r1-04000-89xx.0
 etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
 etc/cne/Nexus/ROW/ROW_profiles.xml|238e785e9674b27c4b2365958d127533d7293132
