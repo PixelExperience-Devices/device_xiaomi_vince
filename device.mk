@@ -15,7 +15,9 @@
 #
 
 $(call inherit-product, vendor/xiaomi/vince/vince-vendor.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
+
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 25
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
