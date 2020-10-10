@@ -30,5 +30,5 @@ allow hal_fingerprint_default vfat:dir { search };
 allow hal_fingerprint_default sysfs_leds:dir { search };
 allow hal_fingerprint_default sysfs_battery_supply:dir { search };
 allow hal_fingerprint_default storage_file:dir { search };
-allow hal_fingerprint_default storage_file:lnk_file { search };
+allow hal_fingerprint_default storage_file:lnk_file { read };
 allow hal_fingerprint_default mnt_user_file:dir { search };
