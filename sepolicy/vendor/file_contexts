@@ -4,6 +4,9 @@
 # Camera
 /data/vendor/qcam(/.*)?                         u:object_r:vendor_camera_data_file:s0
 
+# DRM
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@\[0-9]+\.[0-9]+-service\.clearkey      u:object_r:hal_drm_clearkey_exec:s0
+
 # Fpc Fingerprint
 /data/fpc(/.*)?					u:object_r:fpc_data_file:s0
 /dev/socket/fpce(/.*)?				u:object_r:fpce_socket:s0
