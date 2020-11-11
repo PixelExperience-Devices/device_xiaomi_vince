@@ -46,15 +46,15 @@ vendor/lib64/libaudcal.so|6964ecc9607ae9c05ee7b37cbff66c0b37bde216
 vendor/lib64/libaudioalsa.so|af924f5a37d3066a97175f1343ea5c9484689ee3
 vendor/lib64/libqtigef.so|e7f0dfa3cd7252310c9a01f2bc0e4074e6e78871
 
-# Audio ACDB
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
-vendor/etc/acdbdata/adsp_avs_config.acdb
+# Audio ACDB - from vince
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|71d06907c9fe8c123d6390a4478fce02868d0ff6
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|d2bdb61a06db632f2f15bda7a90334ae51624ded
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|8128588f77afc8fc9b1d7f3a64e83b18b110b22c
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|be4871b20fd45fc8ac5edaf8c19643b78eeb0276
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|7e7d37c292a2b081eaa8b6c0ea88f3bb834a0cf4
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|cd739f7132b585ee95afab2db168a2c3f353875c
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|8bec81e255420fdee9507081dd12779dd27c2b78
+vendor/etc/acdbdata/adsp_avs_config.acdb|ac0616af3b2d4f070c0e54c18126a877e528621b
 
 # Audio firmware - from vince
 etc/firmware/tas2557_uCDSP.bin:vendor/firmware/tas2557_uCDSP.bin|b8005b3aa2cb2340ababf3cc75777a1fe14becc6
@@ -610,33 +610,33 @@ vendor/etc/camera/vince_ov5675_ofilm_chromatix_india.xml|e7e90221ea1b0687b614233
 vendor/etc/camera/vince_ov5675_qtech_chromatix.xml|79c2f9c2275e0da609b9c1ad9b6256bd19f2a19b
 vendor/etc/camera/vince_ov5675_qtech_chromatix_india.xml|3c77bcceec7d5d48ac082c6846b41577506d29eb
 
-# Camera firmware
-vendor/firmware/cpp_firmware_v1_8_0.fw
-vendor/firmware/cpp_firmware_v1_5_0.fw
-vendor/firmware/cpp_firmware_v1_6_0.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
-vendor/firmware/cpp_firmware_v1_4_0.fw
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_5_1.fw
-vendor/firmware/cpp_firmware_v1_12_0.fw
-vendor/firmware/cpp_firmware_v1_10_0.fw
-vendor/firmware/cpp_firmware_v1_5_2.fw
-vendor/firmware/cpp_firmware_v1_1_6.fw
+# Camera firmware - from vince
+vendor/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
+vendor/firmware/cpp_firmware_v1_5_0.fw|ac19cd179b7b118bb3ea01a35fdfc78dc58164a1
+vendor/firmware/cpp_firmware_v1_6_0.fw|dcd3d1f904c7ee3d731f8f28b5f78f2503916ada
+vendor/firmware/cpp_firmware_v1_2_0.fw|5ff0d66bcdbb29f4e924d011ae825583e48b3962
+vendor/firmware/cpp_firmware_v1_4_0.fw|11eba982212797920102912142940a9e08931c52
+vendor/firmware/cpp_firmware_v1_1_1.fw|04b8eb253d630eaeadab296e1607dc6a29d93d3c
+vendor/firmware/cpp_firmware_v1_5_1.fw|f3f622ab29a560b170d0f2c6ddec14b933f2d476
+vendor/firmware/cpp_firmware_v1_12_0.fw|de18ccdf371824059acfdf3c7754c6e1bc1c2f8c
+vendor/firmware/cpp_firmware_v1_10_0.fw|cf9458601aa4bbe9c57acfc1c7d0f158386ace9f
+vendor/firmware/cpp_firmware_v1_5_2.fw|58dd7f7c09dbb62bc6f334a8885064b292610675
+vendor/firmware/cpp_firmware_v1_1_6.fw|6b2c9fe0a43a9ce86a921e18faffe4d0a35746ee
 
 # Charger - from LA.UM.8.6.r1-04400-89xx.0
 vendor/bin/hvdcp_opti|7b7cda55c81d523e0fd5741082209bd60f9f6586
 
-# Camera Prebuilts
-vendor/bin/hw/android.hardware.camera.provider@2.4-service
-vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
-vendor/lib/android.hardware.camera.provider@2.4-external.so
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
-vendor/lib64/android.hardware.camera.provider@2.4-external.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
+# Camera Prebuilts - from Android Q
+vendor/bin/hw/android.hardware.camera.provider@2.4-service|ec160fca1e73cd18defdb37d308cd3cb65613a83
+vendor/etc/init/android.hardware.camera.provider@2.4-service.rc|655b17a43029e65318a38dbfa9183f7d2621679f
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so|1b4481d5cf4a2dca72f166e4d63eaaaad6f90711
+vendor/lib/android.hardware.camera.provider@2.4-external.so|364f3399aefbc1f8736933da6c7a30bdd30d514d
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so|1b7d3bbfdf99c32443c359943ffff619619af809
+vendor/lib/vendor.qti.hardware.camera.device@1.0.so|7bccc7d7cd5200129fd4319bfcb2973c7ee59c23
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so|f383005c56884ed0fc9924c2834090a61aaf64c9
+vendor/lib64/android.hardware.camera.provider@2.4-external.so|97f2bdb2ab6095a0c7ae3f4e7450621373aca9c8
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|9e24c62636818046a56a953f17bdd68b6e06b5f3
+vendor/lib64/vendor.qti.hardware.camera.device@1.0.so|8f02859d6659441d8b9b993c600d70fa208a31c9
 
 # CNE - from LA.UM.8.6.r1-04400-89xx.0
 etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
@@ -705,11 +705,11 @@ vendor/lib64/vendor.qti.latency@2.0.so|20a3037a1aea98f5f490b14c8f5620d2d3a0cf57
 # Consumer IR - from vince
 vendor/lib64/hw/consumerir.default.so|bb9e3f31d4ec8b199fc294577241226c531dfff2
 
-# Display calibration
-vendor/etc/qdcm_calib_data_nt36672_csot_e7_fhdplus_video_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_td4310_ebbg_fhdplus_e7_video_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_td4310_fhdplus_e7_g55_video_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_td4310_fhdplus_e7_video_mode_dsi_panel.xml
+# Display calibration - from vince
+vendor/etc/qdcm_calib_data_nt36672_csot_e7_fhdplus_video_mode_dsi_panel.xml|8c31954582a4005f368ad67def05aebf2b201700
+vendor/etc/qdcm_calib_data_td4310_ebbg_fhdplus_e7_video_mode_dsi_panel.xml|897c6712b79aaedeceb56e50ca67e6311f76c875
+vendor/etc/qdcm_calib_data_td4310_fhdplus_e7_g55_video_mode_dsi_panel.xml|bf0b10b3561aece9936256be8053d86dc62031e3
+vendor/etc/qdcm_calib_data_td4310_fhdplus_e7_video_mode_dsi_panel.xml|584fd9b1d0c39f69840c72cb8ada606e1fbdfc38
 
 # DPM - from LA.UM.8.6.r1-04400-89xx.0
 product/bin/dpmd|90cdd79b564456cef2a0c011afab3896463df5e4
@@ -957,8 +957,8 @@ vendor/lib/libOmxWmaDec.so|404ae6ea303634d96d3ee46bee2c6f898fa46c15
 vendor/lib/libvqzip.so|c2cf1d2938c7af82bf011c8d371dfa8ae6cb038e
 -vendor/lib64/libgpustats.so|0cc12485618ae67fb327e89d03b78c5018eab7c1
 
-# Novatek touchscreen firmware
-etc/firmware/novatek_ts_fw.bin:vendor/firmware/novatek_ts_fw.bin
+# Novatek touchscreen firmware - from vince
+etc/firmware/novatek_ts_fw.bin:vendor/firmware/novatek_ts_fw.bin|12f7299c9148dbacf960bd8d835ddfca8f882a8e
 
 # Perf - from LA.UM.8.6.r1-04400-89xx.0
 product/lib/vendor.qti.hardware.perf@1.0.so|b4969fa797d1957ad8f35d4f84615608f0e9cc2e
