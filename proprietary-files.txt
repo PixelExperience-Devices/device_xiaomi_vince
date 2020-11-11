@@ -92,7 +92,7 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so|9c1b952043c7722fd27bfd971ecebb2584671
 # Camera - from vince
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
 vendor/bin/hw/android.hardware.camera.provider@2.4-service|ec160fca1e73cd18defdb37d308cd3cb65613a83
-vendor/bin/mm-qcamera-daemon|ec53936e668eecf511ef2bdf7cc2a3639e363c4e
+vendor/bin/mm-qcamera-daemon|9416e6cdc4fe2aed8de5cf1f3919bba02511be4e
 vendor/lib64/camera.device@1.0-impl.so|a694ba96d8b69d82068dfec3724a94ae7c0130a5
 vendor/lib64/camera.device@3.2-impl.so|2fb34c85517468c05600da6ffd87ee8bf7147593
 vendor/lib64/camera.device@3.3-impl.so|2511b52adec763bfd10c6ecfd0f783d312acc6d8
@@ -639,9 +639,9 @@ vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 
 # CNE - from LA.UM.8.6.r1-04400-89xx.0
-etc/cne/Nexus/ATT/ATT_profiles.xml|a0039cb3a4c5a4ca1adf897904b61c91e32d06f7
-etc/cne/Nexus/ROW/ROW_profiles.xml|e3907ff71cbbe0f1073ec1bf0223d26c8282aa35
-etc/cne/Nexus/VZW/VZW_profiles.xml|0d35b3266ea656d8868ae8f5d7e938f4859e9b0a
+etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
+etc/cne/Nexus/ROW/ROW_profiles.xml|238e785e9674b27c4b2365958d127533d7293132
+etc/cne/Nexus/VZW/VZW_profiles.xml|0f63b632e3a3f114def7aeadaabd13851c8ceec5
 product/lib64/com.quicinc.cne.api@1.0.so|06764410022518f75a8e7fa1de35b7577cdbe8f9
 product/lib64/com.quicinc.cne.api@1.1.so|8940ad6defe4ffba387a259a698c2def51f1d5fa
 product/lib64/com.quicinc.cne.constants@1.0.so|e2f9123a013c2c116b02a1e057870f885808f654
@@ -722,7 +722,7 @@ product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
 product/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb
 product/lib64/libdpmctmgr.so|2e12d384caf2969d4137ceff25cef13781327abf
 product/lib64/libdpmfdmgr.so|97b2f505285ed372a9f3d8a13682ea4022dbd70a
-product/lib64/libdpmframework.so|d90b87f75a62ed091db5b2478307fc402972be7a
+product/lib64/libdpmframework.so|2082cfa66a6a762fdb1b3d8ac316d18c5f9fcca6
 product/lib64/libdpmtcm.so|9f99848e2574d2302692446d5dd87cd90f972b0c
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk|68b6f0227ae0b065dff635f30bfdc3c23f90c395
 vendor/bin/dpmQmiMgr|088e6513ff702d524fcf1c2a4e84f79f744a0543
@@ -880,7 +880,7 @@ vendor/lib64/libsdmutils.so|016450d0366fbd487aa45585afc7d3b81551bed1
 vendor/lib64/libsdmcore.so|2dbe7125f5fd8a116c8bc03fefc0c9b9d963d3eb
 
 # Graphics (Postprocessing) - from LA.UM.8.6.r1-04400-89xx.0
-etc/permissions/com.qti.snapdragon.sdk.display.xml|79a36c560f8cdbfeca03911fefc282bda25b2322
+etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
 framework/com.qti.snapdragon.sdk.display.jar|495d45dd84a61e873a3d1176ab7741826e60d7f1
 vendor/bin/hw/vendor.display.color@1.0-service|dd461fbbbdc7175b8e1e37eba19bc1c48111b5b6
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|a25c2cc8a0498b8f3a08770b97e49b5545868eca
@@ -986,7 +986,7 @@ vendor/lib/vendor.qti.hardware.perf@2.0.so|71592601eed5e022f4979293d68deb98e688a
 
 # Perf (configs) - from LA.UM.8.6.r1-04400-89xx.0
 vendor/etc/perf/commonresourceconfigs.xml|89d443b2b67d58fff1ef34c33e3f1c393164cf5d
-vendor/etc/perf/perfboostsconfig.xml|1c120821b2fe9b3ebf9d00b7bc8c0a374c2918d2
+vendor/etc/perf/perfboostsconfig.xml|051a7e61d941a46441e7bfc90208bc671a47bb33
 vendor/etc/perf/perfconfigstore.xml|dfa3a78fd24cba4b870a3cd04d657cc9962c8331
 vendor/etc/perf/targetconfig.xml|aa20c25397df1455206965737f82d44d44430e45
 vendor/etc/perf/targetresourceconfigs.xml|d9f9815764725df55e748bf4af4829e609dac853
