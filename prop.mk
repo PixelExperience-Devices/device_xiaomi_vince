@@ -138,6 +138,10 @@ vendor.hw.fm.init=0
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
+# Logging
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.control_privapp_permissions=log
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
