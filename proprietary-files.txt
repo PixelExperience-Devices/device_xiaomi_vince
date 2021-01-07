@@ -816,6 +816,7 @@ vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|d3844699c845ce5de4c8b50
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|703f5e8dc38c2044f861cfd7bab8d5931b6331e2
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|95958c3faaf5965e2b72253296d31e2695d7fd9a
 vendor/lib64/libbatching.so|55f08ab1dbad299d8e4f276dfb8b4799671499cd
+vendor/lib64/libcdfw_remote_api.so|8278ba42253fe2217fb87fe651fc4e1d21f1f85c
 vendor/lib64/libdataitems.so|f13cb93394d8aae1eef85c4730b5c8f9ace092a9
 vendor/lib64/libgdtap.so|510075724d368816c89a5f9e76b2529484e03d36
 vendor/lib64/libgeofencing.so|a6fffe98ddc82de53cf353c4f3fca602702a8330
