@@ -835,6 +835,7 @@ vendor/lib64/liblowi_client.so|877bfe67d86e76b4757116e5f3a31d795111b2a2
 vendor/lib64/liblowi_wifihal.so|6ce96d566811e524dadf719e1b6f8a8bca409ef7
 vendor/lib64/libslimclient.so|d2754b969f5b317e3bf083d9503b298ac2e4bcd1
 vendor/lib64/libxtadapter.so|453f9095f8979213c5bec9de73b1b7c6d085e265
+vendor/lib64/libqcc_file_agent.so|a05fbdf0156cb4fc77a4b659be42cc8e146f45ce
 vendor/lib64/vendor.qti.gnss@1.0.so|b291e8be101b7a2d75b8830cb7d243746c1568f8
 vendor/lib64/vendor.qti.gnss@1.1.so|c898355e5a4c6e367d2b275acadc5e8ddf328980
 vendor/lib64/vendor.qti.gnss@1.2.so|9614edea390f451fd22c8051afeebdbddaf9920e
