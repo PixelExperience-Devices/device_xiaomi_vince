@@ -27,9 +27,10 @@ allow hal_fingerprint_default gx_fpd_data_file:file create_file_perms;
 
 # R
 allow hal_fingerprint_default vfat:dir { search };
-allow hal_fingerprint_default sysfs_leds:dir { search };
-allow hal_fingerprint_default sysfs_battery_supply:dir { search };
 allow hal_fingerprint_default storage_file:dir { search };
 allow hal_fingerprint_default storage_file:lnk_file { read };
 allow hal_fingerprint_default mnt_user_file:dir { search };
 allow hal_fingerprint_default default_android_hwservice:hwservice_manager { add };
+allow hal_fingerprint_default vfat:file { getattr open read setattr };
+allow hal_fingerprint_default sysfs_leds:file r_file_perms;
+allow hal_fingerprint_default sysfs_battery_supply:file r_file_perms;
