@@ -16,5 +16,3 @@ allow qti_init_shell self:capability dac_read_search;
 allow qti_init_shell vfat:dir { search read getattr };
 allow qti_init_shell vfat:file { getattr read open };
 allow qti_init_shell system_data_file:dir { write getattr setattr };
-
-allow qti_init_shell sysfs_io_sched_tuneable:file write;
