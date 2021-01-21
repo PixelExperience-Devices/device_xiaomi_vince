@@ -1,6 +1,6 @@
 
 # Service manager
-allow system_server default_android_service:service_manager { add };
+allow system_server default_android_service:service_manager { add find };
 
 # vibrator
 allow system_server sysfs_vibrator:file read;
