@@ -30,7 +30,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 DERP_ROOT="${MY_DIR}/../../.."
 
-HELPER="${DERP_ROOT}/vendor/derp/build/tools/extract_utils.sh"
+HELPER="${DERP_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
