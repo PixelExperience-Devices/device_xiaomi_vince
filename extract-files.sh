@@ -92,6 +92,9 @@ function blob_fixup() {
 	    sed -i 's/fps_hal/vendor.fps_hal/' "${2}"
 	    sed -i 's/group.*/& uhid/' "${2}"
 	;;
+	vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
+	    "${PATCHELF_0_8}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
+	;;
 	esac
 
 }
