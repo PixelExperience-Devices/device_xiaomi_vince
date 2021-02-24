@@ -90,6 +90,7 @@ function blob_fixup() {
 	;;
 	vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc)
 	    sed -i 's/fps_hal/vendor.fps_hal/' "${2}"
+	    sed -i 's/group.*/& uhid/' "${2}"
 	;;
 	esac
 
