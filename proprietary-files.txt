@@ -96,6 +96,7 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so|9c1b952043c7722fd27bfd971ecebb2584671
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
 vendor/bin/hw/android.hardware.camera.provider@2.4-service|ec160fca1e73cd18defdb37d308cd3cb65613a83
 vendor/bin/mm-qcamera-daemon|9416e6cdc4fe2aed8de5cf1f3919bba02511be4e
+vendor/etc/init/android.hardware.camera.provider@2.4-service.rc|655b17a43029e65318a38dbfa9183f7d2621679f
 vendor/lib64/camera.device@1.0-impl.so|a694ba96d8b69d82068dfec3724a94ae7c0130a5
 vendor/lib64/camera.device@3.2-impl.so|2fb34c85517468c05600da6ffd87ee8bf7147593
 vendor/lib64/camera.device@3.3-impl.so|2511b52adec763bfd10c6ecfd0f783d312acc6d8
@@ -628,18 +629,6 @@ vendor/firmware/cpp_firmware_v1_1_6.fw|6b2c9fe0a43a9ce86a921e18faffe4d0a35746ee
 
 # Charger - from LA.UM.8.6.2.r1-08100-89xx.0
 vendor/bin/hvdcp_opti|a9ee4c16f5f4d49396dabb34026ba6fc2d1ed58a
-
-# Camera Prebuilts - from Android Q
-vendor/bin/hw/android.hardware.camera.provider@2.4-service|ec160fca1e73cd18defdb37d308cd3cb65613a83
-vendor/etc/init/android.hardware.camera.provider@2.4-service.rc|655b17a43029e65318a38dbfa9183f7d2621679f
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so|1b4481d5cf4a2dca72f166e4d63eaaaad6f90711
-vendor/lib/android.hardware.camera.provider@2.4-external.so|364f3399aefbc1f8736933da6c7a30bdd30d514d
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so|1b7d3bbfdf99c32443c359943ffff619619af809
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so|7bccc7d7cd5200129fd4319bfcb2973c7ee59c23
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so|f383005c56884ed0fc9924c2834090a61aaf64c9
-vendor/lib64/android.hardware.camera.provider@2.4-external.so|97f2bdb2ab6095a0c7ae3f4e7450621373aca9c8
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|9e24c62636818046a56a953f17bdd68b6e06b5f3
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so|8f02859d6659441d8b9b993c600d70fa208a31c9
 
 # CNE - from LA.UM.8.6.2.r1-08100-89xx.0
 etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
