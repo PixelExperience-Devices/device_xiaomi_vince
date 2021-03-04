@@ -1,0 +1,9 @@
+allow surfaceflinger device:chr_file ioctl;
+allow surfaceflinger firmware_file:dir search;
+r_dir_file(surfaceflinger, sysfs_kgsl)
+allow surfaceflinger hal_graphics_composer_default:dir { search };
+allow surfaceflinger hal_graphics_composer_default:file { read open getattr };
+allow surfaceflinger sysfs_kgsl:file { getattr read open };
+allow surfaceflinger sysfs_kgsl:lnk_file read;
+allow surfaceflinger vendor_file:file { execute getattr open read };
+allow surfaceflinger vendor_system_prop:file { getattr open read };

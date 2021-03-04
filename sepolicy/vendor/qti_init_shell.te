@@ -1,18 +1,23 @@
-allow qti_init_shell proc_touchpanel:dir { r_dir_perms setattr };
-allow qti_init_shell proc_touchpanel:file { getattr setattr };
-
 typeattribute qti_init_shell data_between_core_and_vendor_violators;
-allow qti_init_shell bluetooth_data_file:file r_file_perms;
 
 # Required for FM
 allow qti_init_shell self:socket create;
 
-allow qti_init_shell { sysfs sysfs_dm }:file write;
-
-allow qti_init_shell self:capability dac_override;
-allow qti_init_shell self:capability dac_read_search;
-
-# R
-allow qti_init_shell vfat:dir { search read getattr };
-allow qti_init_shell vfat:file { getattr read open };
-allow qti_init_shell system_data_file:dir { write getattr setattr };
+allow qti_init_shell bluetooth_data_file:file r_file_perms;
+allow qti_init_shell ctl_default_prop:property_service set;
+allow qti_init_shell ctl_start_prop:property_service set;
+allow qti_init_shell fpc_sysfs:dir setattr;
+allow qti_init_shell fpc_sysfs:file setattr;
+allow qti_init_shell mnt_vendor_file:dir rmdir;
+allow qti_init_shell proc_touchpanel:dir { r_dir_perms setattr };
+allow qti_init_shell proc_touchpanel:file { getattr setattr };
+allow qti_init_shell qti_init_shell:capability { kill };
+allow qti_init_shell system_data_file:dir { getattr open read remove_name rmdir write };
+allow qti_init_shell system_data_file:file { getattr unlink };
+allow qti_init_shell self:capability { dac_override dac_read_search kill };
+allow qti_init_shell sysfs:dir setattr;
+allow qti_init_shell sysfs:file { setattr write };
+allow qti_init_shell sysfs_leds:dir setattr;
+allow qti_init_shell sysfs_leds:file setattr;
+allow qti_init_shell vfat:dir { open read search };
+allow qti_init_shell vfat:file { getattr open read };

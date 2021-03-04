@@ -1,4 +1,6 @@
 allow cnd wifi_prop:file { read open getattr };
-
-add_hwservice(cnd,hal_slmadapter_hwservice)
-allow cnd hal_slmadapter_hwservice:hwservice_manager find;
+allow cnd diag_device:chr_file { open read write getattr ioctl };
+allow cnd radio:binder { transfer };
+allow cnd hostapd:process { sigkill };
+allow cnd sysfs:file { open read };
+allow cnd default_android_hwservice:hwservice_manager { find };
