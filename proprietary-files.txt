@@ -748,23 +748,23 @@ vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|75335443a33a06a03ee
 vendor/lib64/libwvhidl.so|4af61fdcf1186700ea7ee23c607fb9ce5fd0f0e8
 
 # Fingerprint (HIDL) - from vince
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|d10a4ed108610493efd420c69077eab7ab64240b
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|a66733fc6eb94d6715c8085e696b47e313cc2568
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|fc513e8527eb2a5459c3fedba46dbf11cec6d76b
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|035243ca68a2aa98baa20fe34d2f0e7df0728ee7
 
 # Fingerprint (FPC) - from vince
-vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.default.so|1d6ad32d111819ea4d69c5c97d935aea6aa24fb3
+vendor/lib64/hw/fingerprint.default.so|07e66268244733eadb117ef5b4fa24651b370e78
 
 # Fingerprint (Extension) - from vince
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|6ed4438dae5a1169cb6baa36ea56d32a0729a2b6
+-vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|47d6458be8aece1ad609371baa09a1516564b755
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
-vendor/framework/com.fingerprints.extension.jar|3064f8f6faf8175a53c6c839cc43fba2f50cd3bb
-vendor/lib64/com.fingerprints.extension@1.0.so|46f1d8bcde50e94b7ad6df85d28300ae7b26c257
+vendor/framework/com.fingerprints.extension.jar|7e972c26a5b51fc13bd4eff6584d40a41c5b09c0
+vendor/lib64/com.fingerprints.extension@1.0.so|61afb9ae3e08d12e9c3c701eaf6fe418fc9bfdde
 
 # Fingerprint (Goodix) - from vince
-etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
-lib64/libgf_algo.so:vendor/lib64/libgf_algo.so
-lib64/libgf_ca.so:vendor/lib64/libgf_ca.so
-lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
+etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
+lib64/libgf_algo.so:vendor/lib64/libgf_algo.so|0e9d1ff46c6d14974ec93e3a146c2c6c0460d1b7
+lib64/libgf_ca.so:vendor/lib64/libgf_ca.so|583a2beee40b38cf14215e4aaa5d872d60b8a00a
+lib64/libgf_hal.so:vendor/lib64/libgf_hal.so|6fd3d415d5822b746a1a9b1163c3c6ddab35912c
 
 # Fingerprint (Goodix HAL) - from daisy-user 10 QKQ1.191002.002 V11.0.18.0.QDLMIXM release-keys
 vendor/lib64/hw/gf_fingerprint.default.so|b09aba758c469f3e3ff04197a723a15fbdfafea1
