@@ -80,7 +80,7 @@ function blob_fixup() {
 	case "${1}" in
 
 	product/lib64/libdpmframework.so)
-	patchelf --add-needed libdpmframework_shim.so "${2}"
+	    "${PATCHELF}" --add-needed libdpmframework_shim.so "${2}"
 	;;
 	vendor/lib/hw/camera.msm8953.so)
 	    "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
@@ -94,6 +94,9 @@ function blob_fixup() {
 	;;
 	vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
 	    "${PATCHELF_0_8}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
+	;;
+	vendor/lib/libmmcamera_ppeiscore.so)
+	    "${PATCHELF}" --add-needed libmmcamera_ppeiscore_shim.so  "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera_ppeiscore.so
 	;;
 	esac
 
@@ -114,8 +117,5 @@ done
 
 # Camera debug log file
 sed -i "s|persist.camera.debug.logfile|persist.vendor.camera.dbglog|g" "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera_dbg.so
-
-# Camera graphicbuffer shim
-patchelf --add-needed libmmcamera_ppeiscore_shim.so  "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera_ppeiscore.so
 
 "${MY_DIR}/setup-makefiles.sh"
