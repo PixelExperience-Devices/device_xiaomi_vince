@@ -108,4 +108,7 @@ done
 # Camera debug log file
 sed -i "s|persist.camera.debug.logfile|persist.vendor.camera.dbglog|g" "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera_dbg.so
 
+# Camera graphicbuffer shim
+patchelf --add-needed libmmcamera_ppeiscore_shim.so  "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera_ppeiscore.so
+
 "${MY_DIR}/setup-makefiles.sh"
