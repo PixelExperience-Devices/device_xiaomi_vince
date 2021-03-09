@@ -7,6 +7,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.dex2oat-filter=speed \
 dalvik.vm.image-dex2oat-filter=speed
 
+# Disable-Blur
+PRODUCT_PRODUCT_PROPERTIES += \
+persist.sys.sf.disable_blurs=1
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.heapstartsize=16m \
