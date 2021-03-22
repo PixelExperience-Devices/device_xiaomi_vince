@@ -124,7 +124,8 @@ persist.camera.stats.test=5 \
 vidc.enc.dcvs.extra-buff-count=2 \
 persist.camera.HAL3.enabled=1 \
 vendor.camera.hal1.packagelist=com.android.camera2 \
-persist.camera.CDS=off
+persist.vendor.camera.CDS=off \
+persist.vendor.camera.video.CDS=off
 
 # Cne
 PRODUCT_PROPERTY_OVERRIDES += \
