@@ -57,18 +57,18 @@ const int kMaxInteractiveDuration = 5000; /* ms */
 const int kMaxLaunchDuration = 5000;      /* ms */
 
 /**
- * Returns true if the target is SDM632.
+ * Returns true if the target is SDM625.
  */
-static bool is_target_SDM632(void) {
-    static int is_SDM632 = -1;
+static bool is_target_SDM625(void) {
+    static int is_SDM625 = -1;
     int soc_id;
 
-    if (is_SDM632 >= 0) return is_SDM632;
+    if (is_SDM625 >= 0) return is_SDM625;
 
     soc_id = get_soc_id();
-    is_SDM632 = soc_id == 349 || soc_id == 350;
+    is_SDM625 = soc_id == 293 || soc_id == 304 || soc_id == 338 || soc_id == 351;
 
-    return is_SDM632;
+    return is_SDM625;
 }
 
 static int process_video_encode_hint(void* metadata) {
@@ -94,7 +94,7 @@ static int process_video_encode_hint(void* metadata) {
 
     if (video_encode_metadata.state == 1) {
         if (is_schedutil_governor(governor)) {
-            if (is_target_SDM632()) {
+            if (is_target_SDM625()) {
                 /* sample_ms = 10mS
                  * SLB for Core0 = -6
                  * SLB for Core1 = -6
