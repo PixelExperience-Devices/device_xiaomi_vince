@@ -1275,12 +1275,13 @@ system_ext/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|32257292ed8c5b2e2f9
 vendor/lib/sensor_calibrate.so|b46cd4135ee0b28f02fd05bba339dbda7585fb1d
 vendor/lib64/sensor_calibrate.so|9d211108a8bff4a4dd4f005a2e690b92d8588bf2
 
-# Thermal - from LA.UM.9.6.2.r1-03600-89xx.0
-vendor/bin/thermal-engine|4939d0127123d988ef4ec2c3eab201541dfe738a
+# Thermal - from Onclite PKQ1.181021.001/V10.2.5.0.PFLCNXM
+vendor/bin/thermal-engine|562035759ae60b3c5267a01293f1aeaa3f40c44b
 vendor/etc/init/init_thermal-engine.rc|f0d14aa4734b2e8afd61a4eed73238187b268f48
-vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
-vendor/lib/libthermalclient.so|248fda00d69a626ee8e24159b704a6ae95eceb99
-vendor/lib64/libthermalclient.so|d042cc537de4950837a5b928f6283fb238a9c59c
+vendor/lib/libthermalclient.so|241d1e751b3a96c67ac5b618ef38bb39d2a94fa7
+vendor/lib/libthermalfeature.so|1f1eb616ba26b309a2fda7de40c2163a4acaaa35
+vendor/lib64/libthermalclient.so|54121e31e4a5170f8c50e36ddb57685b6c538a21
+vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
 
 # Time services - from LA.UM.9.6.2.r1-03600-89xx.0
 -vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
