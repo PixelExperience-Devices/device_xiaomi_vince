@@ -252,6 +252,13 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss@3.0.vendor
 
+	
+# HALs
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/msm8996/audio \
+    hardware/qcom-caf/msm8996/display \
+    hardware/qcom-caf/msm8996/media
+
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl:64 \
