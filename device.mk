@@ -149,6 +149,11 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+	
+# Board
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msm8953
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Camera
 PRODUCT_PACKAGES += \

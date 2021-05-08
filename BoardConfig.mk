@@ -17,6 +17,7 @@
 DEVICE_PATH := device/xiaomi/vince
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+TEMPORARY_DISABLE_PATH_RESTRICTIONS := true
 
 # Architecture
 TARGET_ARCH := arm64
