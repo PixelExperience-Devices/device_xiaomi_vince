@@ -611,4 +611,23 @@
     <string-array name="config_biometric_sensors" translatable="false" >
         <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
     </string-array>
+        <!-- Set this to true to enable the platform's auto-power-save modes like doze and app standby.  These are not enabled by default because they require a standard cloud-to-device messaging service for apps to interact correctly with the modes (such as to be able to deliver an instant message to the device even when it is dozing).  This should be enabled if you have such services and expect apps to correctly use them when installed on your device.  Otherwise, keep this disabled so that applications can still use their own mechanisms. -->
+    <bool name="config_enableAutoPowerModes">true</bool>
+
+    <!-- Flag indicating whether the surface flinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
+
+    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+         Off by default, since the framebuffer readback used to implement the
+         fading edges is prohibitively expensive on most GPUs. -->
+    <bool name="config_ui_enableFadingMarquee">true</bool>
+
+    <!-- Controls the navigation bar interaction mode:
+       	 0: 3 button mode (back, home, overview buttons)
+	 1: 2 button mode (back, home buttons + swipe up for overview)
+	 2: gestures only for back, home and overview -->
+    <integer name="config_navBarInteractionMode">2</integer>
 </resources>
