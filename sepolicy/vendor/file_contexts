@@ -26,6 +26,7 @@
 
 # Ir
 /dev/lirc[0-9]*					u:object_r:lirc_device:s0
+/dev/peel_ir					u:object_r:lirc_device:s0
 
 # Legacy root dirs
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
