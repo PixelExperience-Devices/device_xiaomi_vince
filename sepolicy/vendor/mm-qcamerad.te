@@ -1,10 +1,8 @@
 typeattribute mm-qcamerad binder_in_vendor_violators;
 binder_use(mm-qcamerad);
 
-allow mm-qcamerad camera_data_file:dir { add_name write search };
-allow mm-qcamerad camera_data_file:file { create getattr open write };
+allow mm-qcamerad camera_data_file:file { getattr write };
 allow mm-qcamerad debugfs:dir { read open };
-allow mm-qcamerad debugfs:file { read open };
 allow mm-qcamerad diag_device:chr_file { ioctl open read write };
 allow mm-qcamerad sensorservice_service:service_manager find;
 allow mm-qcamerad sysfs_kgsl:file { getattr open read };

@@ -1,5 +1,4 @@
 allow hvdcp sysfs:dir { open read };
 allow hvdcp sysfs:file { open read write };
 allow hvdcp hvdcp:capability { sys_admin };
-allow hvdcp sysfs_battery_supply:dir { add_name };
 allow hvdcp sysfs_battery_supply:file { create };

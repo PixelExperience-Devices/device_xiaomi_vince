@@ -11,6 +11,4 @@ allow init sysfs_leds:lnk_file read;
 
 allow init sysfs:file setattr;
 
-allow init system_file:dir { relabelfrom };
-allow init system_file:file { relabelfrom };
 allow init socket_device:sock_file { create setattr unlink };

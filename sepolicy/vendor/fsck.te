@@ -1,5 +1,4 @@
-allow fsck self:capability { kill dac_override };
-allow fsck block_device:blk_file { ioctl open read write };
+allow fsck self:capability { kill };
+allow fsck block_device:blk_file { ioctl };
 allow fsck tmpfs:blk_file getattr;
-allow fsck mnt_vendor_file:dir { getattr search };
 allow fsck fsck:capability { sys_admin kill };
