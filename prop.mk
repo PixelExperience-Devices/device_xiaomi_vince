@@ -14,7 +14,9 @@ dalvik.vm.image-dex2oat-threads=8 \
 dalvik.vm.restore-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
 dalvik.vm.restore-dex2oat-threads=8 \
 dalvik.vm.dex2oat-filter=speed \
-dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed \
+dalvik.vm.dex2oat-minidebuginfo=false \
+dalvik.vm.minidebuginfo=false
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
