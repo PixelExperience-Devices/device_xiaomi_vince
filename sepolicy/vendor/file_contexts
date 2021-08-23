@@ -24,6 +24,9 @@
 /(vendor|system/vendor)/bin/init\.goodix\.sh	u:object_r:init_fingerprint_exec:s0
 /persist/data/gxfp(/.*)?			u:object_r:gx_fpd_data_file:s0
 
+# FPS Info
+/sys/devices/virtual/graphics/fb0/measured_fps                              u:object_r:sysfs_fps:s0
+
 # Ir
 /dev/lirc[0-9]*					u:object_r:lirc_device:s0
 /dev/peel_ir					u:object_r:lirc_device:s0
