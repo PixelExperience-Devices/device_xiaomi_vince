@@ -126,7 +126,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
-	gralloc.msm8953
+    gralloc.msm8953
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
@@ -273,7 +273,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.sh \
-    init.qcom.bt.sh \
     init.qcom.post_boot.sh
 
 # RenderScript
