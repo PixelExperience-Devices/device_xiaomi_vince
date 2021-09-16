@@ -33,8 +33,25 @@ on early-init
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
+    # Boost schedtune
+    write /dev/stune/schedtune.boost 50
+    write /dev/stune/schedtune.prefer_idle 1
+
+    # Boost I/O performance
+    write /sys/block/mmcblk0/queue/scheduler "noop"
+    write /sys/block/mmcblk0/queue/read_ahead_kb 2048
+    write /sys/block/mmcblk0/queue/nr_requests 256
+    write /sys/block/mmcblk0/queue/iostats 0
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
+
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-1
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
@@ -140,6 +157,10 @@ on boot
     enable vendor.qcrild2
     enable vendor.dataqti
     enable vendor.dataadpl
+
+    # Restore default I/O tuning
+    write /sys/block/mmcblk0/queue/scheduler "cfq"
+    write /sys/block/mmcblk0/queue/nr_requests 128
 
 # msm specific files that need to be created on /data
 on post-fs-data
