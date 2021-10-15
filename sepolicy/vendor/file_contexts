@@ -21,9 +21,6 @@
 /bt_firmware                                                  u:object_r:bt_firmware_file:s0
 /persist(/.*)?                                                u:object_r:mnt_vendor_file:s0
 
-# HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.xiaomi_msm8953     u:object_r:hal_light_default_exec:s0
-
 # Input devices
 /(vendor|system/vendor)/usr/idc(/.*)?                         u:object_r:vendor_idc_file:s0
 /(vendor|system/vendor)/usr/keylayout(/.*)?                   u:object_r:vendor_keylayout_file:s0
