@@ -284,6 +284,11 @@ ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
 ro.surface_flinger.max_virtual_display_dimension=4096 \
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
+# SOC
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.soc.manufacturer=QTI \
+ro.soc.model=MSM8953
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.delta_time.enable=true
