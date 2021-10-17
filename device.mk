@@ -149,7 +149,7 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
-	
+
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := msm8953
@@ -210,6 +210,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service-lazy \
     android.hardware.drm@1.3-service-lazy.clearkey \
     android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.3-service.clearkey \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.1.vendor \
