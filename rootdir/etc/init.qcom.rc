@@ -362,3 +362,7 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
 on boot
     chown system graphics /sys/class/graphics/fb0/measured_fps
     chmod 0666 /sys/class/graphics/fb0/measured_fps
+
+# AOSP FM
+on property:hw.fm.init=*
+    write /sys/module/radio_iris_transport/parameters/fmsmd_set ${hw.fm.init}

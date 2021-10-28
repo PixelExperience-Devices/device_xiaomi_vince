@@ -757,16 +757,10 @@ vendor/lib64/hw/gf_fingerprint.default.so|b09aba758c469f3e3ff04197a723a15fbdfafe
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|feee131f714ed9a7dd93e7ba9bfc768cbf651426
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|c9d0251df63d8e34b6d70a59ad7b774c9f640fa1
 
-# FM Radio - from LA.UM.9.6.2.r1-03600-89xx.0
-system_ext/lib64/fm_helium.so|55ef376cc802574df92025bebaba1cebcc74a918
-system_ext/lib64/libfm-hci.so|0cfbf3d84724428721973cc7ad22f5d1e1368591
-system_ext/lib64/vendor.qti.hardware.fm@1.0.so|b6bdde84366a79b7d49f98a2eef932dff4f87981
-vendor/bin/fm_qsoc_patches|aaae1e4ee3b3feec9bc5863e1a4bb2eaaf22c0fd
-vendor/etc/init.qti.fm.sh:vendor/bin/init.qti.fm.sh|0ac820dd85ebdf5fa73b5e971f6787ff35ceb65d
-vendor/etc/init/init.qti.fm.rc|4f5459058debbea76991e69f8522126f6655fd3b
-vendor/lib64/ftm_fm_lib.so|cf59c54bece5b0e30d3cbf98aff1922b13ceecd2
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|7eb9a18ddc6b8199aa81770add4998ca0886c2a0
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|f7494923e84b136a44f02699082a7e0a380f94e9
+# FM - from LA.UM.9.6.3.r1-04400-89xx.0
+-system_ext/lib64/vendor.qti.hardware.fm@1.0.so|1f3cb360169a315d781bbebe57318cccbc8b681e
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|5f48a9ed98dad9fa59cf1a2469f53e1066ab24a6
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|bab0150ce3fdc5d180a32ab9499e7693be2e0d0a
 
 # Gatekeeper - from LA.UM.8.6.r1-04400-89xx.0
 vendor/lib/hw/gatekeeper.msm8953.so|c17725b59dac2effb3423edc60085366dd629e62
