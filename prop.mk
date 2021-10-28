@@ -281,7 +281,13 @@ debug.sf.early_gl_phase_offset_ns=3000000 \
 debug.sf.early_gl_app_phase_offset_ns=15000000 \
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
 ro.surface_flinger.max_virtual_display_dimension=4096 \
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+ro.surface_flinger.protected_contents=true \
+ro.surface_flinger.use_smart_90_for_video=true \
+ro.surface_flinger.set_display_power_timer_ms=10000 \
+ro.surface_flinger.set_touch_timer_ms=5000 \
+ro.surface_flinger.set_idle_timer_ms=9000 \
+ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # SOC
 PRODUCT_PROPERTY_OVERRIDES += \
