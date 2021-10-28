@@ -280,10 +280,13 @@ persist.vendor.ims.disableQXDMLogs=1
 
 # SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
-debug.sf.early_phase_offset_ns=1500000 \
-debug.sf.early_app_phase_offset_ns=1500000 \
-debug.sf.early_gl_phase_offset_ns=3000000 \
-debug.sf.early_gl_app_phase_offset_ns=15000000 \
+debug.sf.use_phase_offsets_as_durations=1 \
+debug.sf.late.sf.duration=10500000 \
+debug.sf.late.app.duration=20500000 \
+debug.sf.early.sf.duration=21000000 \
+debug.sf.early.app.duration=16500000 \
+debug.sf.earlyGl.sf.duration=13500000 \
+debug.sf.earlyGl.app.duration=21000000 \
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
 ro.surface_flinger.max_virtual_display_dimension=4096 \
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
