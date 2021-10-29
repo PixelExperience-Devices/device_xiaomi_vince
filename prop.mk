@@ -166,6 +166,7 @@ ro.hardware.vulkan=adreno \
 ro.hardware.egl=adreno \
 sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
+vendor.display.use_smooth_motion=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
 video.accelerate.hw=1
