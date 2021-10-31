@@ -45,8 +45,6 @@ BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
-TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
-
 # Kernel
 TARGET_KERNEL_CONFIG := vince_defconfig
 BOARD_KERNEL_BASE := 0x80000000
@@ -190,10 +188,11 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.recovery.qcom
 
 # RIL
-DISABLE_RILD_OEM_HOOK := true
+ENABLE_VENDOR_RIL_SERVICE := true
+TARGET_USES_OLD_MNC_FORMAT := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2020-08-01
+VENDOR_SECURITY_PATCH := 2021-07-05
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
