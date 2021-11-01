@@ -79,6 +79,11 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libshim_dpmframework.so" "$LIBSHIM_DPMFRAMEWORK"
             done
             ;;
+        system_ext/lib64/lib-imsvideocodec.so)
+            for LIBSHIM_IMSVIDEOCODEC in $(grep -L "libshim_imsvideocodec.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libshim_imsvideocodec.so" "$LIBSHIM_IMSVIDEOCODEC"
+            done
+            ;;
         vendor/usr/keylayout/uinput-fpc.kl|vendor/usr/keylayout/uinput-goodix.kl)
             sed -i '11d' "${2}"
             ;;
