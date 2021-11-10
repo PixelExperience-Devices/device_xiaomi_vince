@@ -165,6 +165,10 @@ telephony.lteOnCdmaDevice=1
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 vendor.service.qti.ims.enabled=1
 
+# SOC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=MSM8953
+
 # System
 persist.sys.binary_xml=false
 
