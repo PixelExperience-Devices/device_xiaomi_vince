@@ -94,6 +94,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # ART
+DONT_DEXPREOPT_PREBUILTS := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
