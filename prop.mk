@@ -289,6 +289,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.soc.manufacturer=QTI \
 ro.soc.model=MSM8953
 
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.binary_xml=false
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.delta_time.enable=true
