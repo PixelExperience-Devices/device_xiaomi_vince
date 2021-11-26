@@ -13,3 +13,6 @@ genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-02/200f000.q
 
 # Rmt
 genfscon debugfs /rmt_storage          u:object_r:debugfs_rmt:s0
+
+# Wake_gesture
+genfscon sysfs /devices/platform/soc/78b7000.i2c/i2c-3/3-0020/input/input2/wake_gesture          u:object_r:sysfs_wakegesture:s0
