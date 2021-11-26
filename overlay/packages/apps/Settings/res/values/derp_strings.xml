@@ -14,4 +14,6 @@
 
     <string name="maintainer_name">Addy</string>
 
+         <!-- Ultra Power Saving -->
+    <bool name="config_supportUltraPowerSaving">true</bool>
 </resources>
