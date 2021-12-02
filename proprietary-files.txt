@@ -21,38 +21,30 @@ vendor/lib/rfsa/adsp/libfastcvadsp.so|9818625bfa018f517e32a8f4a1e7fb4b255e5049
 vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
 vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
 
-# ANT - from LA.UM.9.6.2.r1-03600-89xx.0
-system_ext/lib/com.qualcomm.qti.ant@1.0.so|6b8eb143ce3e33e474c7bc28ff3cc58b86c6369c
+# ANT+ - from LA.UM.9.6.2.r1-04200-89xx.0
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so|7fffcdca309796183708d9e345d3cd97461d901d
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|b5c57fdf48447c68b6308fdcb167d0d21b5c56ed
 
-# Audio - from LA.UM.9.6.r1-03600-89xx.0
-vendor/lib/libacdb-fts.so|ce5d9ee6188712bb55658fc00548aef96ec0ff17
-vendor/lib/libacdbloader.so|55a231d238826908bd1e89032a0a25f414878a7f
-vendor/lib/libacdbrtac.so|58e01597eb162cc5783d9ca6da54e46cf67ad638
-vendor/lib/libadiertac.so|d7d70e99afaad0de116bf757b0621b9bb4dcd93d
+# Audio - from LA.UM.9.6.2.r1-04200-89xx.0
+vendor/lib/libacdb-fts.so|fee2b1f0b93c28f5ef0a4d65736cca01c4275975
+vendor/lib/libacdbloader.so|1f5867fbd9491eb3dda91d74ab2d8713da243c5a
+vendor/lib/libacdbrtac.so|50f9c46c1ed2758338db567b00e8eee1889ab21a
+vendor/lib/libadiertac.so|5c80bbb7ae8fb329ec4c2518c4e336b010bd57dc
 vendor/lib/libadm.so|a5e6c65b7133440b4550234db4454e4c81627f66
-vendor/lib/libaudcal.so|eb40b2659ed470196cce8950dd74eca96932b2aa
+vendor/lib/libaudcal.so|4fa1da9616f7470caa79f905740daff66922b584
 vendor/lib/libaudioalsa.so|58feb2c5cbc4ac6e23ef4896c87785bed8db3c80
 vendor/lib/libdrc.so|303d67b5bfea162ae994d3817de317258035c42a
-vendor/lib/libqtigef.so|fbb307c0da385bf09cbdef714e8fc1ecfc7ba6fd
-vendor/lib/libsurround_3mic_proc.so|84a4d84fcf567554fb5174fc6d41310d864e5f8e
-vendor/lib64/libacdb-fts.so|8bf7d9173cdf503ffa240be382d8bfb06c6dfdb5
-vendor/lib64/libacdbloader.so|986ac81bd9a00b9b725077fd770ddba51d89ac04
-vendor/lib64/libacdbrtac.so|8975cdf11a072bd10c9c8aaf41612a072376ab3c
-vendor/lib64/libadiertac.so|e6cddad2fe64c4b6fb667c95b918d235dd6da01d
-vendor/lib64/libaudcal.so|854016f08b7c31d1e9152f7bd79f61b5e447d583
+vendor/lib64/libacdb-fts.so|ae8275322050d1bd5cebf2cee15864fcf3c87fdf
+vendor/lib64/libacdbloader.so|d32fcac74a11ae0f982b60af13aea0c061383e1b
+vendor/lib64/libacdbrtac.so|547a42e2ed54d13e780fab26134ec0fd90054d4c
+vendor/lib64/libadiertac.so|98a8c2702d4e203689e4a80c69c4b1cf93af1567
+vendor/lib64/libaudcal.so|213bdd87ec3339042796f62605e38690e2500fd6
 vendor/lib64/libaudioalsa.so|534d4dc07fecea0611273c745721b1ed2015a3a3
-vendor/lib64/libqtigef.so|b3f1cb946809bfe20a4afced73b4fd24c5591421
 
-# Audio (soundfx) - from LA.UM.9.6.r1-03600-89xx.0
-vendor/lib/soundfx/libaudiopreprocessing.so|310ae9609312b9992773fd96126e0578c7a2aaa5
-vendor/lib/soundfx/libqcbassboost.so|67ab526a37e5df11392d1795d6648f9392fed0c2
-vendor/lib/soundfx/libqcreverb.so|28f96f5f3f6a55d86eac851b6400ebccd7b6ac8d
-vendor/lib/soundfx/libqcvirt.so|a27b5916c1967042d08f22e53dad5c336bb3634b
-vendor/lib64/soundfx/libaudiopreprocessing.so|63a98e98764eae355edbdd075d4a9001584731b5
-vendor/lib64/soundfx/libqcbassboost.so|cf97dd5888911723bbc2670dbfb1db564e4fccf8
-vendor/lib64/soundfx/libqcreverb.so|7612cdf973b010e1344444932646cc12a2f22ea7
-vendor/lib64/soundfx/libqcvirt.so|a2ae2633b8b1763dc27faaea295f69c879c14d68
+# Audio (soundfx) - from LA.UM.9.6.2.r1-04200-89xx.0
+vendor/lib/soundfx/libqcbassboost.so|aee797870096234f1237c6b99819cfceb1a80ecc
+vendor/lib/soundfx/libqcreverb.so|cd884a46419329933c81096ad1eeba46bc0b8a70
+vendor/lib/soundfx/libqcvirt.so|3ed80ebc51ab6c2a56d4e9c29bf119d201a47e65
 
 # Audio ACDB - from vince
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|71d06907c9fe8c123d6390a4478fce02868d0ff6
@@ -67,43 +59,25 @@ vendor/etc/acdbdata/adsp_avs_config.acdb|ac0616af3b2d4f070c0e54c18126a877e528621
 # Audio firmware - from vince
 etc/firmware/tas2557_uCDSP.bin:vendor/firmware/tas2557_uCDSP.bin|b8005b3aa2cb2340ababf3cc75777a1fe14becc6
 
-# Bluetooth (BTConfigstore) - from LA.UM.9.6.2.r1-03600-89xx.0
--system_ext/lib/libbtconfigstore.so|3aafa518b3b665f2d5aa933970a2292fa09d4f04
--system_ext/lib64/libbtconfigstore.so|5fa6e5cb8d2c58fd766fba7a2650e6439d3ae86e
+# Bluetooth (BTConfigstore) - from LA.UM.9.6.2.r1-04200-89xx.0
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|2c5480b33615179e1a8a67bf93e190e8647c68b4
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|0abafcc0c404b67bb0d87128a87cc9deabe54935
 
-# Bluetooth (QTI Service) - from LA.UM.9.6.2.r1-03600-89xx.0
+# Bluetooth (QTI Service) - from LA.UM.9.6.2.r1-04200-89xx.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|2401640a10df4de23f704b87c4adab2da9ed111d
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
 
-# Bluetooth (Audio) - from LA.UM.9.6.2.r1-03600-89xx.0
-system_ext/lib/com.qualcomm.qti.bluetooth_audio@1.0.so|561c5e6a21aa52a0304e68fa0ff5831016ca76fa
-system_ext/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|b15a286dbf82f816561a4405485d3d33eedd6cf5
-system_ext/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so|1d2726c8f530880c1ec3b1ff62d1b01eab77ff77
-system_ext/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|24a60d093fd07a6970347417bebd7b592dc37800
-vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so|b7e8e307484dbd4897890f8b687704fefad9a24e
-vendor/lib/hw/audio.bluetooth_qti.default.so|8184989dcd81bc4fffd974b18491b4d608938e9c
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|cb7cbc95d6311c101a75a4b2bdcc71499bed0189
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|d53d5f5ba35b192d90e4c2c5613207100807d874
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|e3ee09937aa7b070abf05c9b9d272a8cef4d5bd5
-vendor/lib/libbluetooth_audio_session.so|8fb9550f56e1fbd084813f25c0620f739f574952
-vendor/lib/libbluetooth_audio_session_qti.so|bb3e4af983225626aa6e7b52a23038330b3d0fbd
-vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|aa7b06dbdac9e09f3cbbf7af568f5ac778bc0fbc
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|52e8cb160e61e81abdc43c058bfbf88649855dde
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|6fae6667e26563fe98d3c53bdc3e3d2b6728daab
-vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so|b8317b7c26a7505c0cba2ead37faac632a2c8cc9
-vendor/lib64/hw/audio.bluetooth_qti.default.so|e628e65d5c07c81ff96783217f8aaf46702aa992
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|f37c3ece06c1422e52f7815afdc3ad242292647f
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|b66dd9afad70780943187074abb332f84c6734d7
+# Bluetooth (Audio) - from LA.UM.9.6.2.r1-04200-89xx.0
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|20627ee95c176ee124140dd5101f3232f74f3014
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|a97a6c330c932176acee0bce820c6e737778aed4
-vendor/lib64/libbluetooth_audio_session.so|605ca153da568af19b264e51b21480f530d65313
-vendor/lib64/libbluetooth_audio_session_qti.so|9260e1e8011a68205474299dbb10ffcfeb34ee3a
 vendor/lib64/libbt-hidlclient.so|1491414e874419d2df1529c511bd48e348cf53a8
 vendor/lib64/libbtnv.so|07e031527e60ce5e62a5017fd1d7ff83ef1aafcf
-vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|a6766f13b095a684b55ad69d33533b60741521f9
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|3281b131bf921fbdc00afe66cf2a0493a86b97a0
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|5de4a802667afa2c05b9c75ae6311fcd0c8b23f6
+
+# Bluetooth (aptX) - from Crosshatch - 11/RQ2A.210405.006/7214111
+system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Camera - from vince
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
