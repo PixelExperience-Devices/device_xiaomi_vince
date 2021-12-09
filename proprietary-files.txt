@@ -81,24 +81,9 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Camera - from vince
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
-vendor/bin/hw/android.hardware.camera.provider@2.4-service|ec160fca1e73cd18defdb37d308cd3cb65613a83
 vendor/bin/mm-qcamera-daemon|9416e6cdc4fe2aed8de5cf1f3919bba02511be4e
-vendor/etc/init/android.hardware.camera.provider@2.4-service.rc|655b17a43029e65318a38dbfa9183f7d2621679f
-vendor/lib64/camera.device@1.0-impl.so|a694ba96d8b69d82068dfec3724a94ae7c0130a5
-vendor/lib64/camera.device@3.2-impl.so|2fb34c85517468c05600da6ffd87ee8bf7147593
-vendor/lib64/camera.device@3.3-impl.so|2511b52adec763bfd10c6ecfd0f783d312acc6d8
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so|f383005c56884ed0fc9924c2834090a61aaf64c9
-vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so|257fefcd4a0efa0aa9f0e0f34ad0bea52379bea5
-vendor/lib/camera.device@1.0-impl.so|48757757d85d29b83275d92575e70f791609ba48
-vendor/lib/camera.device@3.2-impl.so|762c1d97990d7ebb42dda46272240ae63678f455
-vendor/lib/camera.device@3.3-impl.so|36be87612d4cfd593f8c45b09eaa7a2312a747b0
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so|1b4481d5cf4a2dca72f166e4d63eaaaad6f90711
-vendor/lib/hw/camera.msm8953.so|667ca4a0de623354576cc5848be51a76b5aa7bdb
 vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
 vendor/lib/libllvd_sw_tnr.so|406895e2ae614ac84a62d1758bce1810b99c5cda
-vendor/lib/libarcsoft_beautyshot.so|6e27af412c6df41098905719410848c5c00202ae
-vendor/lib/libarcsoft_dualcam_refocus.so|94dccc693d4ec11f76904337eca393c61f36b2ad
-vendor/lib/libarcsoft_high_dynamic_range.so|fdc82ea4f9fcaa25a51b2c19f243db201bf576dd
 vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
 vendor/lib/libFaceGrade.so|da3fb5f1c3e9c2b6300169d6a4cbddb8858076f4
 vendor/lib/libflash_pmic.so|a1d235914558fb04e5bf9e64f9d822cce3de5841
@@ -138,7 +123,6 @@ vendor/lib/libmmcamera_faceproc2.so|27f802a68cc8aab70ba0637fd60e5d5c52f606a0
 vendor/lib/libmmcamera_faceproc.so|2b580dc5464b390586246ad3cc23efdf903a2833
 vendor/lib/libmmcamera_hdr_gb_lib.so|e72adca954037e74deb4e4b77178973cdca0fe0a
 vendor/lib/libmmcamera_imglib.so|c45833f94e0bcc9aad03e9b8fe4cf6a29beb551c
-vendor/lib/libmmcamera_interface.so|4a76880e37d55d6722f0f4ab8e7e317b39cd0d52
 vendor/lib/libmmcamera_isp_abf40.so|73296e65aa12ef06ebb0e034fc71e4e6fcccfe31
 vendor/lib/libmmcamera_isp_bcc40.so|3d1487e754200ac279ae46a345c7639a5976471e
 vendor/lib/libmmcamera_isp_be_stats44.so|65b9cd6705bcd447a833507757babe8f4c2dab33
@@ -199,15 +183,11 @@ vendor/lib/libmmcamera_vince_ov5675_ofilm_eeprom.so|3e3ba1e380ba67e4bbf4c66743c0
 vendor/lib/libmmcamera_vince_ov5675_ofilm.so|d16da2b057d9875c74915a0b43fae000e0e3353b
 vendor/lib/libmmcamera_vince_ov5675_qtech_eeprom.so|7428418d95ffd43d8b1b7613f4b6674005633c97
 vendor/lib/libmmcamera_vince_ov5675_qtech.so|541e8b202971e78107609f801dab496b153a3884
-vendor/lib/libmmjpeg_interface.so|c6fbe47040d402600a46623a84338d8cd76d6367
 vendor/lib/libmmjpeg.so|994560d7b1ebc6364ddfe991ba798423cab0ec6a
-vendor/lib/libmm-qcamera.so|e055d46c76a27fe177706e6b054d8ea4982b2bcc
 vendor/lib/libmmqjpeg_codec.so|2ac857280b44fa9eb863933f2c7dac45c29b2148
 vendor/lib/libmmqjpegdma.so|004f7eac2d5501f87b63b814703d983e6616a3ad
-vendor/lib/libmpbase.so|431479c51fe23e1def5e8e50aea34975f19ba41a
 vendor/lib/libois_lc898122.so|e5b2d75963a577d830261ad513a285746a588130
 vendor/lib/liboptizoom.so|1e92993743636c045438f1f15c07c1e835d9ca46
-vendor/lib/libqomx_core.so|48b30e2353bbc3582f2f478c250f46cafaafab5c
 vendor/lib/libqomx_jpegdec.so|08e67425edfdf4a70de0178e88f917ef88214c27
 vendor/lib/libqomx_jpegenc_pipe.so|776ee885eea0619a54eabf7475b48de5510a55b0
 vendor/lib/libqomx_jpegenc.so|cac66ed16c24335a0fd5f5e4a0823d0a012a8192
@@ -219,7 +199,6 @@ vendor/lib/libskia.so|89ff4c400c140fe8418a51b9802cb41b3a61ee94
 vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
 vendor/lib/libvidhance_gyro.so|b5e3fd3ce40e3c2ea2a225fe05704052474b9ddd
 vendor/lib/libvidhance.so|ffb47950b1974c68d5daa50de67548c57fc5c0de
-vendor/lib/libXMFD_AgeGender.so|52fe8abb44c6633b6e854a1ba3dffeee51e94e61
 vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so|fd7894bcbcc514f757966adc25fd9bd17eddd2eb
 
 # Camera actuators - from vince
