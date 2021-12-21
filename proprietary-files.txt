@@ -320,6 +320,12 @@ vendor/firmware/a506_zap.mdt
 vendor/firmware/a530_pfp.fw
 vendor/firmware/a530_pm4.fw
 
+# Keylayout
+usr/keylayout/gpio-keys.kl:vendor/usr/keylayout/gpio-keys.kl
+usr/keylayout/synaptics_dsx_v21.kl:vendor/usr/keylayout/synaptics_dsx_v21.kl
+usr/keylayout/uinput-fpc.kl:vendor/usr/keylayout/uinput-fpc.kl
+usr/keylayout/uinput-goodix.kl:vendor/usr/keylayout/uinput-goodix.kl
+
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8953.so
 vendor/lib/libadpcmdec.so
