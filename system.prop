@@ -1,0 +1,4 @@
+# system.prop for vince
+
+# BPF
+ro.kernel.ebpf.supported=true
