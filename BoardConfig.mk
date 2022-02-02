@@ -210,6 +210,7 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 #SELINUX_IGNORE_NEVERALLOWS := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
+BUILD_BROKEN_TREBLE_SYSPROP_NEVERALLOW := true
 
 # SurfaceFlinger
 TARGET_USE_AOSP_SURFACEFLINGER := true
