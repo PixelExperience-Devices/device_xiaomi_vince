@@ -60,7 +60,7 @@ vendor.audio.feature.snd_mon.enable=true \
 vendor.audio.feature.compr_cap.enable=false \
 vendor.audio.feature.hifi_audio.enable=true \
 vendor.audio.feature.hdmi_edid.enable=true  \
-endor.audio.feature.spkr_prot.enable=true  \
+vendor.audio.feature.spkr_prot.enable=true  \
 vendor.audio.feature.dsm_feedback.enable=false \
 vendor.audio.feature.ssrec.enable=true  \
 vendor.audio.feature.compr_voip.enable=true \
@@ -78,7 +78,6 @@ vendor.audio.feature.display_port.enable=false \
 vendor.audio.feature.fluence.enable=true \
 vendor.audio.feature.custom_stereo.enable=true \
 vendor.audio.feature.anc_headset.enable=true \
-vendor.audio.feature.spkr_prot.enable=false \
 vendor.audio.feature.fm.enable=true \
 vendor.audio.feature.external_dsp.enable=false \
 vendor.audio.feature.external_speaker.enable=false \
@@ -96,7 +95,7 @@ vendor.audio.feature.audiozoom.enable=false \
 vendor.audio.feature.auto_hal.enable=false \
 vendor.audio.read.wsatz.type=true \
 vendor.audio.feature.multi_voice_session.enable=true \
-vendor.audio.feature.incall_music.enable=true
+vendor.audio.feature.incall_music.enable=false
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
