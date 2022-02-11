@@ -161,6 +161,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/vendor.qti.esepowermanager@1.0-serv
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# LMKD Stats Log
+TARGET_LMKD_STATS_LOG := true
+
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
