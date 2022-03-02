@@ -1,0 +1,13 @@
+[
+    {
+        "repository": "kernel_xiaomi_vince",
+        "target_path": "kernel/xiaomi/vince",
+        "branch": "twelve"
+    },
+    {
+      "repository": "PrajjuS/vendor_xiaomi_vince",
+      "target_path": "vendor/xiaomi/vince",
+      "branch": "elixir-12",
+      "remote": "github"
+    }
+]
