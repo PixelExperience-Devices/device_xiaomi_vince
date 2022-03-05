@@ -30,4 +30,3 @@ allow hal_fingerprint_default gx_fpd_data_file:dir create_dir_perms;
 allow hal_fingerprint_default system_data_file:dir create_dir_perms;
 allow hal_fingerprint_default gx_fpd_data_file:file create_file_perms;
 
-allow hal_fingerprint_default default_android_hwservice:hwservice_manager { add };
