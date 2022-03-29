@@ -16,7 +16,6 @@ allow qti_init_shell system_data_file:dir { getattr open read remove_name rmdir 
 allow qti_init_shell system_data_file:file { getattr };
 allow qti_init_shell self:capability { kill };
 allow qti_init_shell sysfs:dir setattr;
-allow qti_init_shell sysfs:file { setattr write };
 allow qti_init_shell sysfs_leds:dir setattr;
 allow qti_init_shell sysfs_leds:file setattr;
 allow qti_init_shell vfat:dir { open read search };
