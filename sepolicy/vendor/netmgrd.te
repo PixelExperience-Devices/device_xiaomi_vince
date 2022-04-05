@@ -1,4 +1,4 @@
-typeattribute netmgrd vendor_executes_system_violators;
+#typeattribute netmgrd vendor_executes_system_violators;
 
 set_prop(netmgrd, vendor_xlat_prop)
 
