@@ -7,5 +7,5 @@
      for different hardware and product builds. -->
 <resources>
     <!-- Rounded display corners-->
-    <dimen name="rounded_corner_radius">3dp</dimen>
+    <dimen name="rounded_corner_radius">18dp</dimen>
 </resources>
