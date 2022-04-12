@@ -9,5 +9,11 @@
       "target_path": "vendor/xiaomi/vince",
       "branch": "elixir-12",
       "remote": "github"
-    }
+    },
+	  {
+		"repository": "Panchajanya1999/azure-clang",
+		"target_path": "prebuilts/clang/host/linux-x86/clang-15",
+		"branch": "main",
+		"remote": "gitlab"
+	  }
 ]
