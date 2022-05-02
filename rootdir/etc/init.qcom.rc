@@ -277,11 +277,20 @@ on property:persist.sys.radio.mobile_data_swap=1
 on property:vendor.media.target.version=*
     setprop vendor.sys.media.target.version ${vendor.media.target.version}
 
+on property:vold.decrypt=trigger_shutdown_framework
+    stop vendor.gnss_service
+    stop vendor.camera-provider-2-4
+    stop vendor.fps_hal
+    stop wcnss-service
+    stop vendor.qcrild
+    stop vendor.qcrild2
+
 on property:vold.decrypt=trigger_restart_framework
-    restart vendor.camera-provider-2-4
-    restart vendor.audio-hal
+    stop vendor.camera-provider-2-4
+    stop vendor.audio-hal
     restart vendor.fps_hal
     start wcnss-service
+    restart vendor.gnss_service
 
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
@@ -328,6 +337,10 @@ service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
 
 on property:sys.boot_completed=1
     start qcom-post-boot
+    start vendor.qcom-post-boot
+    start vendor.camera-provider-2-4
+    start vendor.audio-hal
+    
 
 on property:init.svc.qcom-post-boot=stopped
     # Set min gpu freq as 320mhz
