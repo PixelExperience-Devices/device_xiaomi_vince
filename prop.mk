@@ -7,10 +7,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.dex2oat-filter=speed \
 dalvik.vm.image-dex2oat-filter=speed
 
-# Disable-Blur
-PRODUCT_PRODUCT_PROPERTIES += \
-persist.sys.sf.disable_blurs=1
-
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.heapstartsize=16m \
@@ -102,6 +98,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.service.bdroid.sibs=false \
 vendor.qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7
+
+# Blur
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.surface_flinger.supports_background_blur=1 \
+ro.sf.blurs_are_expensive=1 \
+persist.sys.sf.disable_blurs=1 \
+ro.launcher.blur.appLaunch=0
 
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
