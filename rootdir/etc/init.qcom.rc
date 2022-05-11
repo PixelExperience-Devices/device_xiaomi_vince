@@ -43,6 +43,10 @@ on early-init
     write /sys/block/mmcblk0/queue/nr_requests 256
     write /sys/block/mmcblk0/queue/iostats 0
 
+    # Tracefs
+    mount tracefs tracefs /sys/kernel/tracing
+    chmod 0755 /sys/kernel/tracing
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
