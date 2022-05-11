@@ -33,7 +33,6 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     mount_all /vendor/etc/fstab.qcom
-    swapon_all /vendor/etc/fstab.qcom
 
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
@@ -302,4 +301,6 @@ on property:sys.boot_completed=1
 # Stop the logger service
     stop boot_log
     stop boot_log_crash
-    stop boot_log_kernel
+    stop boot_log_kernel    
+# Enable ZRAM
+    swapon_all /vendor/etc/fstab.qcom
