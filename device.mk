@@ -209,9 +209,17 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
 	libvulkan \
     liboverlay \
+    libdisplayconfig \
+    libdisplayconfig.qti \
+    libgralloc.qti \
+    libqdMetaData \
     libqdMetaData.system \
     libgenlock \
-    libtinyxml
+    libtinyxml \
+    vendor.display.config@1.0.vendor \
+    vendor.display.config@2.0 \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.mapper@2.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
