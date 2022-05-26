@@ -310,6 +310,13 @@ ro.soc.model=MSM8953
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.binary_xml=false
 
+# Recovery
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.sys.recovery_update=false
+
+PRODUCT_VENDOR_PROPERTIES += \
+persist.vendor.recovery_update=false
+
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PROVISIONED=1 \
