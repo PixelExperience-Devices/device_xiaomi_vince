@@ -678,4 +678,8 @@
 
     <!-- Whether to cancel fingerprint operation if not idle -->
     <bool name="config_fpCancelIfNotIdle">true</bool>
+
+    <!-- Allow the gesture to double tap the power button twice to start the camera while the device
+         is non-interactive. -->
+    <bool name="config_cameraDoubleTapPowerGestureEnabled">false</bool>
 </resources>
