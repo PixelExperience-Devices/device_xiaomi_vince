@@ -63,15 +63,6 @@ function blob_fixup() {
         product/lib64/libdpmframework.so)
             "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
             ;;
-        vendor/lib64/libsettings.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
-            ;;
-        vendor/lib64/libwvhidl.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
-            ;;
-        vendor/lib64/libril-qc-hal-qmi.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
-            ;;
         vendor/usr/keylayout/uinput-fpc.kl|vendor/usr/keylayout/uinput-goodix.kl)
             sed -i '11d' "${2}"
             ;;
