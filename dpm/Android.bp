@@ -19,4 +19,6 @@ cc_library {
         "strdup16to8.cpp",
         "strdup8to16.cpp",
     ],
+    compile_multilib: "64",
+    system_ext_specific: true
 }
