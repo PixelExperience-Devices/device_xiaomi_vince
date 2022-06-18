@@ -8,6 +8,8 @@ audio.offload.video=true
 persist.vendor.audio.hw.binder.size_kbyte=1024
 persist.vendor.audio.speaker.prot.enable=false
 ro.audio.soundfx.dirac=true
+ro.config.media_vol_steps=30
+ro.config.vc_call_vol_steps=6
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
@@ -45,14 +47,14 @@ ro.qualcomm.bt.hci_transport=smd
 ro.kernel.ebpf.supported=1
 
 # Camera
-camera.display.lmax=1280x720
-camera.display.umax=1920x1080
 camera.hal1.packagelist=com.skype.raider,com.google.android.talk
 camera.lowpower.record.enable=1
 media.camera.ts.monotonic=1
 persist.camera.gyro.disable=0
 persist.camera.isp.clock.optmz=0
 persist.camera.stats.test=5
+persist.vendor.camera.display.umax=1920x1080
+persist.vendor.camera.display.lmax=1280x720
 persist.vendor.qti.telephony.vt_cam_interface=1
 vidc.enc.dcvs.extra-buff-count=2
 
@@ -112,16 +114,12 @@ ro.fm.transmitter=false
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
-# Fwk detect
-ro.vendor.qti.va_aosp.support=1
-
 # Media
 av.debug.disable.pers.cache=1
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 media.aac_51_output_enabled=true
 media.msm8956hw=0
-media.stagefright.audio.sink=280
 vendor.mm.enable.qcom_parser=1048575
 mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
@@ -149,26 +147,24 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 persist.radio.multisim.config=dsds
-persist.rild.nitz_long_ons_0=""
-persist.rild.nitz_long_ons_1=""
-persist.rild.nitz_long_ons_2=""
-persist.rild.nitz_long_ons_3=""
-persist.rild.nitz_plmn=""
-persist.rild.nitz_short_ons_0=""
-persist.rild.nitz_short_ons_1=""
-persist.rild.nitz_short_ons_2=""
-persist.rild.nitz_short_ons_3=""
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_plmn=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 rild.libargs=-d /dev/smd0
-rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,20
 ro.telephony.iwlan_operation_mode=legacy
-service.qti.ims.enabled=1
 telephony.lteOnCdmaDevice=1
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 vendor.service.qti.ims.enabled=1
