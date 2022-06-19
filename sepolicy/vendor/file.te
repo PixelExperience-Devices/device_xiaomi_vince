@@ -25,6 +25,9 @@ type proc_swap, fs_type;
 # netmgr
 type netmgr_data_file, file_type, data_file_type;
 
+# /proc/last_kmsg
+type proc_last_kmsg, fs_type, proc_type;
+
 # Rild
 type rild_file, file_type, vendor_file_type;
 
