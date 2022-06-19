@@ -5,9 +5,9 @@
       "branch": "twelve-plus"
     },
     {
-      "repository": "PrajjuS/vendor_xiaomi_vince",
+      "repository": "rk134/vendor_xiaomi_vince",
       "target_path": "vendor/xiaomi/vince",
-      "branch": "elixir-12",
+      "branch": "12.1-wip",
       "remote": "github"
     },
 	  {
