@@ -24,15 +24,20 @@
 
 using ::aidl::android::hardware::power::Mode;
 
+#define GPU_MIN_PWRLEVEL_NODE "/sys/class/kgsl/kgsl-3d0/min_pwrlevel"
+
 namespace aidl {
 namespace android {
 namespace hardware {
 namespace power {
 namespace impl {
 
+using ::android::base::WriteStringToFile;
+
 bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
     switch (type) {
             case Mode::LAUNCH:
+            case Mode::EXPENSIVE_RENDERING:
             *_aidl_return = true;
             return true;
         default:
@@ -44,6 +49,9 @@ bool setDeviceSpecificMode(Mode type, bool enabled) {
     switch (type) {
         case Mode::LAUNCH:
             power_hint(POWER_HINT_LAUNCH, enabled ? &enabled : NULL);
+            return true;
+        case Mode::EXPENSIVE_RENDERING:
+            WriteStringToFile(enabled ? "0" : "6", GPU_MIN_PWRLEVEL_NODE, true);
             return true;
         default:
             return false;
