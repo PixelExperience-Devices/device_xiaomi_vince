@@ -223,11 +223,6 @@
         <fqname>@1.0::IQcRilAudio/slot2</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.radio.atcmdfwd</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IAtCmdFwd/AtCmdFwdService</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
         <transport>hwbinder</transport>
         <fqname>@1.5::IImsRadio/imsradio0</fqname>
