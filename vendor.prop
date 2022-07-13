@@ -66,22 +66,69 @@ ro.charger.enable_suspend=true
 persist.vendor.cne.feature=1
 
 # Dalvik
-dalvik.vm.heapstartsize=8m
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.dexopt-flags=m=v,o=y
+dalvik.vm.verify-bytecode=false
+dalvik.vm.checkjni=false
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.lockprof.threshold=250
+ro.kernel.android.checkjni=false
+dalvik.vm.jmiopts=forcecopy
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+dalvik.vm.check-dex-sum=false
 dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapsize=512m
-dalvik.vm.heaptargetutilization=0.75
-dalvik.vm.heapminfree=512k
 dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=4m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.boot-dex2oat-threads=8
+ro.sys.fw.dex2oat_thread_count=8
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.heaptargetutilization=0.25
+ro.fb.mode=1
+debug.qctwa.preservebuf=1
+debug.enabletr=true
+ro.dev.dmm=1
+ro.sf.compbypass.enable=0
+persist.sys.composition.type=mdp
+debug.mdpcomp.maxlayer=5
+ro.config.hw_power_saving=true
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+persist.service.pcsync.enable=0
+persist.service.lgospd.enable=0
 
 # Display
-debug.egl.hw=0
+persist.sys.composition.type=gpu
+ro.hwui.use_opengl=true
+debug.hwui.renderer=opengl
+debug.egl.hw=1
+debug.sf.hw=1
 debug.enable.sglscale=1
 debug.gralloc.enable_fb_ubwc=1
 debug.mdpcomp.logs=0
 debug.renderengine.backend=threaded
 debug.sf.enable_hwc_vds=1
-debug.sf.hw=0
 debug.sf.recomputecrop=0
+debug.hwui.render_dirty_regions=false
+debug.hwui.profile=false
+debug.hwui.profile.maxframes=60
+debug.hwui.skip_empty_damage=true
+debug.hwui.use_buffer_age=false
+debug.hwui.use_partial_updates=true
+debug.hwui.use_gpu_pixel_buffers=false
+ro.hwui.texture_cache_size=72
+ro.hwui.layer_cache_size=48
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.path_cache_size=32
+ro.hwui.gradient_cache_size=6
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.texture_cache_flushrate=0.6
+ro.hwui.text_small_cache_width=2048
+ro.hwui.text_small_cache_height=1024
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=1024
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
@@ -129,6 +176,13 @@ vendor.video.disable.ubwc=1
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
 
+# FSTrim
+ro.sys.fw.use_trim_settings=true
+ro.sys.fw.empty_app_percent=50
+ro.sys.fw.trim_empty_percent=100
+ro.sys.fw.trim_cache_percent=100
+ro.sys.fw.trim_enable_memory=2147483648
+da
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
