@@ -91,7 +91,6 @@ debug.qctwa.preservebuf=1
 debug.enabletr=true
 ro.dev.dmm=1
 ro.sf.compbypass.enable=0
-persist.sys.composition.type=mdp
 debug.mdpcomp.maxlayer=5
 ro.config.hw_power_saving=true
 dalvik.vm.dex2oat-filter=speed
@@ -100,7 +99,6 @@ persist.service.pcsync.enable=0
 persist.service.lgospd.enable=0
 
 # Display
-persist.sys.composition.type=gpu
 ro.hwui.use_opengl=true
 debug.hwui.renderer=opengl
 debug.egl.hw=1
