@@ -7,10 +7,14 @@ audio.offload.min.duration.secs=30
 audio.offload.video=true
 persist.vendor.audio.hw.binder.size_kbyte=1024
 persist.vendor.audio.speaker.prot.enable=false
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
 ro.audio.soundfx.dirac=true
 ro.config.media_vol_steps=30
 ro.config.vc_call_vol_steps=6
 ro.vendor.audio.sdk.ssr=false
+ro.vendor.audio.sdk.fluencetype=fluence
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.flac.sw.decoder.24bit=true
@@ -57,6 +61,9 @@ persist.vendor.camera.display.umax=1920x1080
 persist.vendor.camera.display.lmax=1280x720
 persist.vendor.qti.telephony.vt_cam_interface=1
 vidc.enc.dcvs.extra-buff-count=2
+persist.vendor.camera.CDS=off
+persist.vendor.camera.video.CDS=off
+persist.vendor.camera.HAL3.enabled=1
 
 # Charger
 ro.charger.disable_init_blank=true
