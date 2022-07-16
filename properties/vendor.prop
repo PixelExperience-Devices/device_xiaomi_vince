@@ -17,6 +17,9 @@ dalvik.vm.image-dex2oat-filter=speed-profile
 dalvik.vm.dex2oat-minidebuginfo=false 
 dalvik.vm.minidebuginfo=false
 
+# Crypto
+ro.crypto.volume.contents_mode=aes-256-xts
+
 # Dalvik
 dalvik.vm.heapstartsize=8m 
 dalvik.vm.heapgrowthlimit=192m 
