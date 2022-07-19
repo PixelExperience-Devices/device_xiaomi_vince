@@ -6,10 +6,10 @@
     "remote": "github"
   },
   {
-    "repository": "rk134-org/vendor_xiaomi_vince",
+    "repository": "vendor_xiaomi_vince",
     "target_path": "vendor/xiaomi/vince",
-    "branch": "arrow-12.1",
-    "remote": "github"
+    "branch": "twelve-plus-wip",
+    "remote": "gitlab"
   },
   {
     "repository": "Panchajanya1999/azure-clang",
