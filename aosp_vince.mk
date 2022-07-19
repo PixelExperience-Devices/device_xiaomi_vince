@@ -6,7 +6,6 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # All components inherited here go to system_ext image
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
@@ -14,7 +13,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 # Inherit some common Pixel Experience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
