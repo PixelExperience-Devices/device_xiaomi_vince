@@ -33,10 +33,8 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK := true
-TARGET_USES_BLUR := false
-TARGET_USES_AOSP_CHARGER := true
 TARGET_SUPPORTS_QUICK_TAP := false
-TARGET_DISABLE_POSTRENDER_CLEANUP := true
+
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince

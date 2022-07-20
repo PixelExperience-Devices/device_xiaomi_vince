@@ -19,9 +19,6 @@ DEVICE_PATH := device/xiaomi/vince
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 TEMPORARY_DISABLE_PATH_RESTRICTIONS := true
 
-# APEX
-OVERRIDE_TARGET_FLATTEN_APEX := true
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -29,28 +26,30 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a53
 
+# Second architecture
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
+# Board configuration
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
+TARGET_BOARD_SUFFIX := _64
+
+# Build flags
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 SKIP_ABI_CHECK=true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
-
-TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := vince-perf_defconfig
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 androidboot.usbconfigfs=true loop.max_part=16
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -64,14 +63,14 @@ TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-15
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
+# ART
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
-
-# ART
-ART_BUILD_TARGET_NDEBUG := true
-ART_BUILD_TARGET_DEBUG := false
-ART_BUILD_HOST_NDEBUG := true
-ART_BUILD_HOST_DEBUG := false
+OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Audio
 USE_DEVICE_SPECIFIC_AUDIO := true
@@ -107,33 +106,21 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# CNE and DPM
-BOARD_USES_QCNE := true
-
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
-
-# Dexpreopt
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
-      WITH_DEXPREOPT := true
-    endif
-  endif
-endif
 
 # Display
 USE_DEVICE_SPECIFIC_DISPLAY := true
 DEVICE_SPECIFIC_DISPLAY_PATH := $(DEVICE_PATH)/qcom-caf/display
 TARGET_SCREEN_DENSITY := 411
-TARGET_DISPLAY_USE_SMOOTH_MOTION := true
 TARGET_USES_ION := true
 TARGET_USES_NEW_ION_API :=true
 TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_OVERLAY := true
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
+# RS Driver
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 # UI
@@ -154,7 +141,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := system/product
 TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/fs/config.fs
 
 # FM
 BOARD_HAVE_QCOM_FM := true
@@ -166,10 +153,10 @@ TARGET_NO_RPC := true
 TARGET_USES_HARDWARE_QCOM_GPS := false
 
 # HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/vendor.qti.esepowermanager@1.0-service.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
+DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/vendor.qti.esepowermanager@1.0-service.xml
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
@@ -192,21 +179,27 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 25765043200 # 25765059584 - 16384
 BOARD_VENDORIMAGE_PARTITION_SIZE := 872415232
 
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
-# Power
+# DT2W node
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0020/input/input2/wake_gesture"
+
+# Power
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 BOARD_POWER_CUSTOM_BOARD_LIB := libpower_8953
 TARGET_USES_INTERACTION_BOOST := true
-TARGET_HAS_NO_POWER_STATS := true
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.recovery.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
@@ -215,7 +208,6 @@ TARGET_USES_OLD_MNC_FORMAT := true
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-#SELINUX_IGNORE_NEVERALLOWS := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 BUILD_BROKEN_TREBLE_SYSPROP_NEVERALLOW := true
 

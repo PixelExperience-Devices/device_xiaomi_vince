@@ -1,0 +1,30 @@
+# system.prop for vince
+
+# BPF
+ro.kernel.ebpf.supported=true
+
+# Zygote preforking
+persist.device.config.runtime_native.usap_pool_enabled=true
+
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=1440
+ro.zram.periodic_wb_delay_hours=24
+
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
+
+# System
+persist.sys.binary_xml=false
+
+# Fingerprint
+persist.qfp=false
+
+# FM
+ro.fm.transmitter=false
+
+# Recovery
+persist.sys.recovery_update=false
+
+# QCOM
+ro.vendor.qti.va_aosp.support=1
