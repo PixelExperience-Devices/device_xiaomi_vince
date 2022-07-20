@@ -284,9 +284,6 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.soc.manufacturer=QTI 
 ro.soc.model=MSM8953
 
-# Recovery
-persist.vendor.recovery_update=false
-
 # Telephony
 DEVICE_PROVISIONED=1 
 persist.rild.nitz_long_ons_0= 

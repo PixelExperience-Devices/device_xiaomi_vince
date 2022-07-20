@@ -23,8 +23,5 @@ persist.qfp=false
 # FM
 ro.fm.transmitter=false
 
-# Recovery
-persist.sys.recovery_update=false
-
 # QCOM
 ro.vendor.qti.va_aosp.support=1
